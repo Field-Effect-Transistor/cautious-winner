@@ -1,18 +1,22 @@
 #include "startWidget.hpp"
 
-startWidget::startWidget(QWidget *parent) : QWidget(parent) {
+startWidget::startWidget(QWidget* currWidget_, QWidget *parent) : QWidget(parent) {
 
     layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
     alignLayout = new QBoxLayout(QBoxLayout::TopToBottom, this);
 
-    currWidget = new authWidget(this);
+    {
+        if(currWidget_)
+            currWidget = currWidget_; 
+        else
+            currWidget = new authWidget(this);
+    }
 
     //picture
     picLabel = new QLabel(this);
     picLabel->setPixmap(QPixmap("resources/pictures/loginPic.png"));
     picLabel->setScaledContents(true);
     picLabel->setFixedSize(200, 200);
-    //picLabel->setAlignment(Qt::AlignHCenter);
 
     //message
     mesg = new QLabel(this);
