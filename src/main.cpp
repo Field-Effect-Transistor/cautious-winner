@@ -3,13 +3,17 @@
 #include <QWidget>
 
 #include "login.hpp"
-#include "mainWidget.hpp"
+#include "startWidget.hpp"
+#include "authWidget.hpp"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
-    MainWidget main;
+    startWidget main;
     main.show();
 
+    authWidget auth;
+    auth.show();
+    
     return app.exec();
 }
