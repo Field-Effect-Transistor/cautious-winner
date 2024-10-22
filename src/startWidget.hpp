@@ -5,6 +5,8 @@
 #include <QLabel>
 #include <QPixmap>
 #include <QFont>
+#include <QStackedWidget>
+#include <QIcon>
 
 #include "authWidget.hpp"
 #include "loginWidget.hpp"
@@ -12,19 +14,21 @@
 class startWidget : public QWidget {
     Q_OBJECT
 
-protected:
-
+public:
     QBoxLayout* layout;
     QBoxLayout* alignLayout;
 
-    QWidget* currWidget;
-    
     QLabel* mesg;
-
-    //picture
     QLabel* picLabel;
 
+    QStackedWidget* stackedWidget;
+
+    authWidget* auth;
+    loginWidget* login;
+
 public:
-    explicit startWidget(QWidget* currWidget_ = nullptr, QWidget *parent = nullptr);
+    explicit startWidget(QWidget *parent = nullptr);
     ~startWidget();
+
+    void switchToLogin();  // Функція для зміни на loginWidget
 };

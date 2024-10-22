@@ -1,7 +1,5 @@
 #include <QApplication>
-#include <QLabel>
-#include <QWidget>
-
+#include <QTimer>
 #include "startWidget.hpp"
 #include "authWidget.hpp"
 #include "loginWidget.hpp"
@@ -9,14 +7,14 @@
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
-    authWidget auth;
-    auth.show();
-    loginWidget login;
-    login.show();
-
-    startWidget startWithAuth(&auth), startWithLogin(&login);
+    startWidget startWithAuth;
     startWithAuth.show();
-    startWithLogin.show();
-    
+
+    // Створюємо таймер для зміни віджета через 5 секунд
+    QTimer::singleShot(5000, [&]() {
+        // Перемикаємося на loginWidget
+        startWithAuth.switchToLogin();
+    });
+
     return app.exec();
 }
