@@ -40,7 +40,7 @@ Login::Login(QWidget *parent) : QWidget(parent) {
         //groups
         inputGB = new QGroupBox(this);
         inputGB->setAlignment(Qt::AlignHCenter);
-        inputGB->setTitle("Welcome to our parking!!!");
+        inputGB->setTitle("Welcome to our Parking!!!");
         {
             QFont font = inputGB->font();
             font.setBold(true);
@@ -77,7 +77,6 @@ Login::Login(QWidget *parent) : QWidget(parent) {
         setWindowIcon(QIcon("resources/pictures/loginPic.ico"));
         setWindowTitle("Log in");
         setLayout(windowLayout);
-
     }
 
 Login::~Login() {}

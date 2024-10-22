@@ -13,9 +13,11 @@ include_directories(src)
 set(SOURCES
     src/main.cpp
     src/login.cpp
+    src/mainWidget.cpp
 )
 set(HEADERS
     src/login.hpp
+    src/mainWidget.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
