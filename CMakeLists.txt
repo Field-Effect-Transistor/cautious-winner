@@ -12,12 +12,10 @@ find_package(Qt5 REQUIRED COMPONENTS Widgets)
 include_directories(src)
 set(SOURCES
     src/main.cpp
-    src/login.cpp
     src/startWidget.cpp
     src/authWidget.cpp
 )
 set(HEADERS
-    src/login.hpp
     src/startWidget.hpp
     src/authWidget.hpp
 )

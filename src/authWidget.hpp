@@ -6,8 +6,9 @@
 #include <QPushButton>
 
 class authWidget : public QWidget {
-protected:
+    Q_OBJECT
 
+protected:
     QBoxLayout* layout;
     QBoxLayout* authBoxLayout;
 
@@ -17,7 +18,6 @@ protected:
     QPushButton* regBtn;
     QPushButton* guestBtn;
 
-    Q_OBJECT
 public:
     explicit authWidget(QWidget *parent = nullptr);
     ~authWidget();

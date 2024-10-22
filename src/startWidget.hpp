@@ -6,7 +6,6 @@
 #include <QPixmap>
 #include <QFont>
 
-#include "login.hpp"
 #include "authWidget.hpp"
 
 class startWidget : public QWidget {

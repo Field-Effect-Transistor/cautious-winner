@@ -2,7 +2,6 @@
 #include <QLabel>
 #include <QWidget>
 
-#include "login.hpp"
 #include "startWidget.hpp"
 #include "authWidget.hpp"
 

@@ -11,12 +11,12 @@ authWidget::authWidget(QWidget *parent) : QWidget(parent) {
     guestBtn = new QPushButton("Guest", this);
 
     layout->setAlignment(authGB, Qt::AlignHCenter | Qt::AlignTop);
-        
+    //layout->addSpacing(61);
         authBoxLayout->addWidget(loginBtn);
         authBoxLayout->addWidget(regBtn);
         authBoxLayout->addWidget(guestBtn);
     authGB->setLayout(authBoxLayout);
-    authGB->setFixedWidth(200);
+    authGB->setMinimumWidth(300);
     layout->addWidget(authGB);
     layout->setSizeConstraint(QLayout::SetFixedSize);
     

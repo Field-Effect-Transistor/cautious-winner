@@ -29,9 +29,10 @@ startWidget::startWidget(QWidget *parent) : QWidget(parent) {
         alignLayout->addWidget(picLabel);
         alignLayout->addWidget(mesg);
         alignLayout->addWidget(currWidget);
-        alignLayout->setAlignment(picLabel, Qt::AlignCenter);
-        alignLayout->setAlignment(mesg, Qt::AlignCenter);
-        alignLayout->setAlignment(currWidget, Qt::AlignCenter);
+        alignLayout->setAlignment(picLabel, Qt::AlignHCenter);
+        alignLayout->setAlignment(mesg, Qt::AlignHCenter);
+        alignLayout->setAlignment(currWidget, Qt::AlignHCenter);
+        alignLayout->setAlignment(Qt::AlignVCenter);
         alignLayout->setSizeConstraint(QLayout::SetFixedSize);
 
     setLayout(layout);
