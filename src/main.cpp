@@ -3,6 +3,7 @@
 #include "startWidget.hpp"
 #include "authWidget.hpp"
 #include "loginWidget.hpp"
+#include "regWidget.hpp"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
@@ -11,23 +12,23 @@ int main(int argc, char *argv[]) {
     startWithAuth.show();
 
     // Створюємо таймер для зміни віджета через 5 секунд
-    QTimer::singleShot(3000, [&]() {
+    QTimer::singleShot(5000, [&]() {
         // Перемикаємося на loginWidget
-        startWithAuth.switchTo(ID::GUEST);
+        startWithAuth.switchTo(ID::REGISTER);
+    });
+/**
+    // Створюємо таймер для зміни віджета через 5 секунд
+    QTimer::singleShot(10000, [&]() {
+        // Перемикаємося на loginWidget
+        startWithAuth.switchTo(ID::LOGIN);
     });
 
     // Створюємо таймер для зміни віджета через 5 секунд
-    QTimer::singleShot(6000, [&]() {
+    QTimer::singleShot(15000, [&]() {
         // Перемикаємося на loginWidget
-        startWithAuth.switchTo(ID::GUEST);
+        startWithAuth.switchTo(ID::REGISTER);
     });
-
-    // Створюємо таймер для зміни віджета через 5 секунд
-    QTimer::singleShot(9000, [&]() {
-        // Перемикаємося на loginWidget
-        startWithAuth.switchTo(ID::GUEST);
-    });
-
+*/
 
     return app.exec();
 }

@@ -11,6 +11,7 @@
 #include "authWidget.hpp"
 #include "loginWidget.hpp"
 #include "guestWidget.hpp"
+#include "regWidget.hpp"
 
 class startWidget : public QWidget {
     Q_OBJECT
@@ -29,6 +30,7 @@ protected:
     authWidget* auth;
     loginWidget* login;
     guestWidget* guest;
+    regWidget* reg;
 
 public:
     explicit startWidget(QWidget *parent = nullptr);
@@ -39,8 +41,9 @@ public:
 
 namespace ID {
     enum {
-        AUTH = 0,
-        LOGIN = 1,
-        GUEST = 2
+        AUTH        = 0,
+        LOGIN       = 1,
+        GUEST       = 2,
+        REGISTER    = 3
     };
 }

@@ -8,28 +8,30 @@ startWidget::startWidget(QWidget *parent)
     auth = new authWidget(this);
     login = new loginWidget(this);
     guest = new guestWidget(this);
+    reg = new regWidget(this);
 
     //picture
     picLabel = new QLabel(this);
-    picLabel->setPixmap(QPixmap("resources/pictures/loginPic.png"));
+    picLabel->setPixmap(QPixmap("resources/pictures/loginPic282x260.png"));
     picLabel->setScaledContents(true);
-    picLabel->setFixedSize(200, 200);
+    picLabel->setFixedSize(200, 185);
 
     //message
     mesg = new QLabel(this);
-    mesg->setText("Welcome to our Parking!");
+    mesg->setText("Welcome to our Parking!!!");
     {
         QFont font = mesg->font();
         font.setBold(true);
-        font.setPointSize(10);
+        font.setPointSize(12);
         mesg->setFont(font);
     }
 
     // Створюємо QStackedWidget
     stackedWidget = new QStackedWidget(this);
-    stackedWidget->addWidget(auth);  // Додаємо authWidget
-    stackedWidget->addWidget(login); // Додаємо loginWidget
-    stackedWidget->addWidget(guest); // Додаємо loginWidget
+    stackedWidget->addWidget(auth); 
+    stackedWidget->addWidget(login);
+    stackedWidget->addWidget(guest); 
+    stackedWidget->addWidget(reg); 
 
     //layouts
     layout->addLayout(alignLayout);

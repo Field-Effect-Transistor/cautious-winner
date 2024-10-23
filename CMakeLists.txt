@@ -16,13 +16,14 @@ set(SOURCES
     src/authWidget.cpp
     src/loginWidget.cpp
     src/guestWidget.cpp
+    src/regWidget.cpp
 )
 set(HEADERS
     src/startWidget.hpp
     src/authWidget.hpp
     src/loginWidget.hpp
     src/guestWidget.hpp
-
+    src/regWidget.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
