@@ -2,12 +2,11 @@
 
 #include <QWidget>
 #include <QBoxLayout>
-#include <QGroupBox>
-#include <QPushButton>
-#include <QLabel>
 #include <QLineEdit>
+#include <QPushButton>
+#include <QGroupBox>
 
-class loginWidget : public QWidget {
+class guestWidget : public QWidget {
     Q_OBJECT
 
 protected:
@@ -19,12 +18,12 @@ protected:
     QGroupBox* buttonGB;
 
     QLineEdit* emailIn;
-    QLineEdit* passwdIn;
+    QLineEdit* licenseIn;
 
-    QPushButton* loginBtn;
+    QPushButton* guestLoginBtn;
     QPushButton* retBtn;
 
 public:
-    loginWidget(QWidget *parent = nullptr);
-    ~loginWidget();
+    explicit guestWidget(QWidget *parent = nullptr);
+    ~guestWidget();
 };

@@ -10,11 +10,14 @@
 
 #include "authWidget.hpp"
 #include "loginWidget.hpp"
+#include "guestWidget.hpp"
 
 class startWidget : public QWidget {
     Q_OBJECT
 
-public:
+protected:
+    QString title;
+
     QBoxLayout* layout;
     QBoxLayout* alignLayout;
 
@@ -25,10 +28,19 @@ public:
 
     authWidget* auth;
     loginWidget* login;
+    guestWidget* guest;
 
 public:
     explicit startWidget(QWidget *parent = nullptr);
     ~startWidget();
 
-    void switchToLogin();  // Функція для зміни на loginWidget
+    void switchTo(int ID);
 };
+
+namespace ID {
+    enum {
+        AUTH = 0,
+        LOGIN = 1,
+        GUEST = 2
+    };
+}

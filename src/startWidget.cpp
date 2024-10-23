@@ -7,6 +7,7 @@ startWidget::startWidget(QWidget *parent)
     
     auth = new authWidget(this);
     login = new loginWidget(this);
+    guest = new guestWidget(this);
 
     //picture
     picLabel = new QLabel(this);
@@ -28,6 +29,7 @@ startWidget::startWidget(QWidget *parent)
     stackedWidget = new QStackedWidget(this);
     stackedWidget->addWidget(auth);  // Додаємо authWidget
     stackedWidget->addWidget(login); // Додаємо loginWidget
+    stackedWidget->addWidget(guest); // Додаємо loginWidget
 
     //layouts
     layout->addLayout(alignLayout);
@@ -41,12 +43,18 @@ startWidget::startWidget(QWidget *parent)
         alignLayout->setSizeConstraint(QLayout::SetFixedSize);
 
     setLayout(layout);
-    setWindowTitle("Parking System");
+    title = "Parking System";
+    setWindowTitle(title);
     setWindowIcon(QIcon("resources/pictures/loginPic.ico"));
 }
 
 startWidget::~startWidget() {}
 
-void startWidget::switchToLogin() {
-    stackedWidget->setCurrentIndex(1);  // Перемикаємося на loginWidget
+void startWidget::switchTo(int ID) {
+    stackedWidget->setCurrentIndex(ID);
+    if (stackedWidget->currentWidget()->windowTitle().length() == 0) {
+        setWindowTitle(title);
+    } else {
+        setWindowTitle(title + " - " + stackedWidget->currentWidget()->windowTitle());
+    }
 }

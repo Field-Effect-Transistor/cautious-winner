@@ -15,11 +15,13 @@ set(SOURCES
     src/startWidget.cpp
     src/authWidget.cpp
     src/loginWidget.cpp
+    src/guestWidget.cpp
 )
 set(HEADERS
     src/startWidget.hpp
     src/authWidget.hpp
     src/loginWidget.hpp
+    src/guestWidget.hpp
 
 )
 

@@ -1,6 +1,6 @@
-#include "loginWidget.hpp"
+#include "guestWidget.hpp"
 
-loginWidget::loginWidget(QWidget *parent) : QWidget(parent) {
+guestWidget::guestWidget(QWidget *parent) : QWidget(parent) {
     layout = new QBoxLayout(QBoxLayout::TopToBottom);
     inputBoxLayout = new QBoxLayout(QBoxLayout::TopToBottom);
     buttonBoxLayout = new QBoxLayout(QBoxLayout::TopToBottom);
@@ -8,23 +8,22 @@ loginWidget::loginWidget(QWidget *parent) : QWidget(parent) {
     inputGB = new QGroupBox(this);
     buttonGB = new QGroupBox(this);
 
-    loginBtn = new QPushButton("Login", this);
+    guestLoginBtn = new QPushButton("Guest login", this);
     retBtn = new QPushButton("Return", this);
 
     //inputs
     emailIn = new QLineEdit(this);
     emailIn->setAlignment(Qt::AlignLeft);
     emailIn->setPlaceholderText("email");
-    passwdIn = new QLineEdit(this);
-    passwdIn->setAlignment(Qt::AlignLeft);
-    passwdIn->setEchoMode(QLineEdit::Password);
-    passwdIn->setPlaceholderText("password");
+    licenseIn = new QLineEdit(this);
+    licenseIn->setAlignment(Qt::AlignLeft);
+    licenseIn->setPlaceholderText("license plate");
 
         inputBoxLayout->addWidget(emailIn);
-        inputBoxLayout->addWidget(passwdIn);
+        inputBoxLayout->addWidget(licenseIn);
     inputGB->setLayout(inputBoxLayout);
     inputGB->setMinimumWidth(300);
-        buttonBoxLayout->addWidget(loginBtn);
+        buttonBoxLayout->addWidget(guestLoginBtn);
         buttonBoxLayout->addWidget(retBtn);
     buttonGB->setLayout(buttonBoxLayout);
     buttonGB->setMinimumWidth(300);
@@ -33,7 +32,7 @@ loginWidget::loginWidget(QWidget *parent) : QWidget(parent) {
     layout->setAlignment(inputGB, Qt::AlignHCenter | Qt::AlignTop);
     layout->setAlignment(buttonGB, Qt::AlignHCenter | Qt::AlignTop);
     setLayout(layout);
-    setWindowTitle("Login");
+    setWindowTitle("Guest login");
 }
 
-loginWidget::~loginWidget() {}
+guestWidget::~guestWidget() {}
