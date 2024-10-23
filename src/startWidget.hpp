@@ -37,6 +37,13 @@ public:
     ~startWidget();
 
     void switchTo(int ID);
+
+private slots:
+    void switchToAuth();
+    void switchToLogin();
+    void switchToGuest();
+    void switchToReg();
+    void exitApp();
 };
 
 namespace ID {

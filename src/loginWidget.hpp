@@ -21,10 +21,10 @@ protected:
     QLineEdit* emailIn;
     QLineEdit* passwdIn;
 
+public:
     QPushButton* loginBtn;
     QPushButton* retBtn;
 
-public:
     loginWidget(QWidget *parent = nullptr);
     ~loginWidget();
 };

@@ -20,10 +20,10 @@ protected:
     QLineEdit* emailIn;
     QLineEdit* licenseIn;
 
+public:
     QPushButton* guestLoginBtn;
     QPushButton* retBtn;
 
-public:
     explicit guestWidget(QWidget *parent = nullptr);
     ~guestWidget();
 };

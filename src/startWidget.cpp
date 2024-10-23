@@ -5,10 +5,18 @@ startWidget::startWidget(QWidget *parent)
     layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
     alignLayout = new QBoxLayout(QBoxLayout::TopToBottom, this);
     
+    //widgets and buttons binding
     auth = new authWidget(this);
+    connect(auth->loginBtn, &QPushButton::clicked, this, &startWidget::switchToLogin);
+    connect(auth->regBtn, &QPushButton::clicked, this, &startWidget::switchToReg);
+    connect(auth->guestBtn, &QPushButton::clicked, this, &startWidget::switchToGuest);
+    connect(auth->exitBtn, &QPushButton::clicked, this, &startWidget::exitApp);
     login = new loginWidget(this);
+    connect(login->retBtn, &QPushButton::clicked, this, &startWidget::switchToAuth);
     guest = new guestWidget(this);
+    connect(guest->retBtn, &QPushButton::clicked, this, &startWidget::switchToAuth);
     reg = new regWidget(this);
+    connect(reg->retBtn, &QPushButton::clicked, this, &startWidget::switchToAuth);
 
     //picture
     picLabel = new QLabel(this);
@@ -59,4 +67,25 @@ void startWidget::switchTo(int ID) {
     } else {
         setWindowTitle(title + " - " + stackedWidget->currentWidget()->windowTitle());
     }
+}
+
+void startWidget::switchToAuth() {
+    switchTo(ID::AUTH);
+}
+
+void startWidget::switchToLogin() {
+    switchTo(ID::LOGIN);
+}   
+
+void startWidget::switchToGuest() {
+    switchTo(ID::GUEST);
+}
+
+void startWidget::switchToReg() {
+    switchTo(ID::REGISTER);
+}
+
+void startWidget::exitApp() {
+    hide();
+    close();
 }

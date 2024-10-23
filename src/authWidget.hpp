@@ -14,11 +14,12 @@ protected:
 
     QGroupBox* authGB;
 
+public:
     QPushButton* loginBtn;
     QPushButton* regBtn;
     QPushButton* guestBtn;
+    QPushButton* exitBtn;
 
-public:
     explicit authWidget(QWidget *parent = nullptr);
     ~authWidget();
 };

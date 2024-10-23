@@ -22,11 +22,11 @@ protected:
     QLineEdit* rPasswdIn;
     QLineEdit* licenseIn;
 
+
+public:
     QPushButton* regBtn;
     QPushButton* retBtn;
 
-
-public:
     explicit regWidget(QWidget *parent = nullptr);
     ~regWidget();
 };
