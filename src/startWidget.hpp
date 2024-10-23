@@ -12,6 +12,7 @@
 #include "loginWidget.hpp"
 #include "guestWidget.hpp"
 #include "regWidget.hpp"
+#include "validation.hpp"
 
 class startWidget : public QWidget {
     Q_OBJECT
@@ -44,6 +45,9 @@ private slots:
     void switchToGuest();
     void switchToReg();
     void exitApp();
+    void loginSlot();
+    void guestSlot();
+    void regSlot();
 };
 
 namespace ID {

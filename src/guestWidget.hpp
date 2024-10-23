@@ -17,10 +17,10 @@ protected:
     QGroupBox* inputGB;
     QGroupBox* buttonGB;
 
+public:
     QLineEdit* emailIn;
     QLineEdit* licenseIn;
 
-public:
     QPushButton* guestLoginBtn;
     QPushButton* retBtn;
 

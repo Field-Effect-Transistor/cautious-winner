@@ -1,3 +1,6 @@
+#include <iostream>
+#include <QDialog>
+
 #include "startWidget.hpp"
 
 startWidget::startWidget(QWidget *parent)
@@ -13,10 +16,13 @@ startWidget::startWidget(QWidget *parent)
     connect(auth->exitBtn, &QPushButton::clicked, this, &startWidget::exitApp);
     login = new loginWidget(this);
     connect(login->retBtn, &QPushButton::clicked, this, &startWidget::switchToAuth);
+    connect(login->loginBtn, &QPushButton::clicked, this, &startWidget::loginSlot);
     guest = new guestWidget(this);
     connect(guest->retBtn, &QPushButton::clicked, this, &startWidget::switchToAuth);
+    connect(guest->guestLoginBtn, &QPushButton::clicked, this, &startWidget::guestSlot);
     reg = new regWidget(this);
     connect(reg->retBtn, &QPushButton::clicked, this, &startWidget::switchToAuth);
+    connect(reg->regBtn, &QPushButton::clicked, this, &startWidget::regSlot);
 
     //picture
     picLabel = new QLabel(this);
@@ -88,4 +94,116 @@ void startWidget::switchToReg() {
 void startWidget::exitApp() {
     hide();
     close();
+}
+
+void startWidget::loginSlot() {
+    if (validation::isEmailInvalid(login->emailIn->text()) ||
+        validation::isPasswdInvalid(login->passwdIn->text())) {
+
+        QDialog dialog(this);
+        dialog.setWindowTitle("Error");
+        QVBoxLayout layout(&dialog);
+
+        QLabel label("Wrong email or password", &dialog);
+        layout.addWidget(&label);
+
+        QPushButton *okButton = new QPushButton("OK");
+        layout.addWidget(okButton);
+        
+        connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
+
+        dialog.setFixedSize(200, 100); // Set fixed size for the dialog
+        dialog.exec(); // Show the dialog
+    } else {
+        hide();
+    }
+}
+
+void startWidget::guestSlot() {
+    if (validation::isEmailInvalid(guest->emailIn->text())) {
+        QDialog dialog(this);
+        dialog.setWindowTitle("Error");
+        QVBoxLayout layout(&dialog);
+
+        QLabel label("Wrong email", &dialog);
+        layout.addWidget(&label);
+
+        QPushButton *okButton = new QPushButton("OK");
+        layout.addWidget(okButton);
+        
+        connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
+
+        dialog.setFixedSize(200, 100); // Set fixed size for the dialog
+        dialog.exec(); // Show the dialog
+    } else {
+        hide();
+    }
+}
+
+void startWidget::regSlot() {
+    if (validation::isEmailInvalid(reg->emailIn->text())) {
+        QDialog dialog(this);
+        dialog.setWindowTitle("Error");
+        QVBoxLayout layout(&dialog);
+
+        QLabel label("Wrong email", &dialog);
+        layout.addWidget(&label);
+
+        QPushButton *okButton = new QPushButton("OK");
+        layout.addWidget(okButton);
+        
+        connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
+
+        dialog.setFixedSize(200, 100); // Set fixed size for the dialog
+        dialog.exec(); // Show the dialog
+    } else if(validation::isPasswdInvalid(reg->passwdIn->text()) ||
+              validation::isPasswdInvalid(reg->rPasswdIn->text())) {
+
+        QDialog dialog(this);
+        dialog.setWindowTitle("Error");
+        QVBoxLayout layout(&dialog);
+
+        QLabel label("Wrong password", &dialog);
+        layout.addWidget(&label);
+
+        QPushButton *okButton = new QPushButton("OK");
+        layout.addWidget(okButton);
+        
+        connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
+
+        dialog.setFixedSize(200, 100); // Set fixed size for the dialog
+        dialog.exec(); // Show the dialog
+    } else if (reg->rPasswdIn->text() != reg->passwdIn->text()) {
+        QDialog dialog(this);
+        dialog.setWindowTitle("Error");
+        QVBoxLayout layout(&dialog);
+
+        QLabel label("Passwords don't match", &dialog);
+        layout.addWidget(&label);
+
+        QPushButton *okButton = new QPushButton("OK");
+        layout.addWidget(okButton);
+        
+        connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
+
+        dialog.setFixedSize(200, 100); // Set fixed size for the dialog
+        dialog.exec(); // Show the dialog
+    } else if (reg->licenseIn->text().length() < 6) {
+        QDialog dialog(this);
+        dialog.setWindowTitle("Error");
+        QVBoxLayout layout(&dialog);
+
+        QLabel label("Wrong license", &dialog);
+        layout.addWidget(&label);
+
+        QPushButton *okButton = new QPushButton("OK");
+        layout.addWidget(okButton);
+        
+        connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
+
+        dialog.setFixedSize(200, 100); // Set fixed size for the dialog
+        dialog.exec(); // Show the dialog
+    } else {
+        hide();
+    }
 }
