@@ -23,6 +23,8 @@ startWidget::startWidget(QWidget *parent)
     reg = new regWidget(this);
     connect(reg->retBtn, &QPushButton::clicked, this, &startWidget::switchToAuth);
     connect(reg->regBtn, &QPushButton::clicked, this, &startWidget::regSlot);
+    connect(reg->passwdIn, &QLineEdit::textChanged, this, &startWidget::passwdValidation);
+    connect(reg->rPasswdIn, &QLineEdit::textChanged, this, &startWidget::rPasswdValidation);
 
     //picture
     picLabel = new QLabel(this);
@@ -205,5 +207,44 @@ void startWidget::regSlot() {
         dialog.exec(); // Show the dialog
     } else {
         hide();
+    }
+}
+
+void startWidget::passwdValidation() {
+    int error = validation::isPasswdInvalid(reg->passwdIn->text());
+    if(error) {
+        QString msg;
+        switch(error) {
+            case validation::invalidPasswd::TOO_SHORT:
+                msg = validation::invalidPasswd::detail::TOO_SHORT_MSG;
+                break;
+            case validation::invalidPasswd::NO_LOWER:
+                msg = validation::invalidPasswd::detail::NO_LOWER_MSG;
+                break;
+            case validation::invalidPasswd::NO_UPPER:
+                msg = validation::invalidPasswd::detail::NO_UPPER_MSG;
+                break;
+            case validation::invalidPasswd::NO_DIGIT:
+                msg = validation::invalidPasswd::detail::NO_DIGIT_MSG;
+                break;
+            case validation::invalidPasswd::NO_SPECIAL:
+                msg = validation::invalidPasswd::detail::NO_SPECIAL_MSG;
+                break;
+            default:
+                break;
+        }
+        QToolTip::showText(reg->passwdIn->mapToGlobal(QPoint(0, reg->passwdIn->height())), msg, reg->passwdIn);
+
+    } else {
+        QToolTip::hideText();
+        //std::cout << "good" << std::endl;
+    }
+}   
+
+void startWidget::rPasswdValidation() {
+    if(reg->rPasswdIn->text() != reg->passwdIn->text()) {
+        QToolTip::showText(reg->rPasswdIn->mapToGlobal(QPoint(0, reg->rPasswdIn->height())), "Passwords don't match", reg->rPasswdIn);
+    } else {
+        QToolTip::hideText();
     }
 }

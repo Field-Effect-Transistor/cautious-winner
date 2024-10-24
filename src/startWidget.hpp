@@ -7,6 +7,7 @@
 #include <QFont>
 #include <QStackedWidget>
 #include <QIcon>
+#include <QToolTip>
 
 #include "authWidget.hpp"
 #include "loginWidget.hpp"
@@ -48,6 +49,8 @@ private slots:
     void loginSlot();
     void guestSlot();
     void regSlot();
+    void passwdValidation();
+    void rPasswdValidation();
 };
 
 namespace ID {

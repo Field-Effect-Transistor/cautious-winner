@@ -18,11 +18,11 @@ namespace validation {
         };
         
         namespace detail {
-            const QString TOO_SHORT_MSG = "Password must be at least 8 characters long.";
-            const QString NO_LOWER_MSG = "Password must contain at least one lowercase letter.";
-            const QString NO_UPPER_MSG = "Password must contain at least one uppercase letter.";
-            const QString NO_DIGIT_MSG = "Password must contain at least one digit.";
-            const QString NO_SPECIAL_MSG = "Password must contain at least one special character.";
+            const QString TOO_SHORT_MSG = "less 8 characters.";
+            const QString NO_LOWER_MSG = "no lowercase letter.";
+            const QString NO_UPPER_MSG = "no uppercase letter.";
+            const QString NO_DIGIT_MSG = "no digits.";
+            const QString NO_SPECIAL_MSG = "no special character.";
         }
     }
 }

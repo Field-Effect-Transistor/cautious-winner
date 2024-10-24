@@ -1,15 +1,15 @@
 #include <QApplication>
-#include <QTimer>
+#include <QLabel>
+#include <QWidget>
+
 #include "startWidget.hpp"
-#include "authWidget.hpp"
-#include "loginWidget.hpp"
-#include "regWidget.hpp"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
+    //app.setStyleSheet("QToolTip { color: #6C0808; }");
+        
+    startWidget w;
+    w.show();
 
-    startWidget startWithAuth;
-    startWithAuth.show();
-    
     return app.exec();
 }
