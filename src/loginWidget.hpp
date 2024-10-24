@@ -6,6 +6,8 @@
 #include <QPushButton>
 #include <QLabel>
 #include <QLineEdit>
+#include <QMessageBox>
+#include <QDebug>
 
 class loginWidget : public QWidget {
     Q_OBJECT

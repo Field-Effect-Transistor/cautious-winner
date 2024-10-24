@@ -4,6 +4,8 @@
 #include <QBoxLayout>
 #include <QGroupBox>
 #include <QPushButton>
+#include <QMessageBox>
+#include <QDebug>
 
 class authWidget : public QWidget {
     Q_OBJECT

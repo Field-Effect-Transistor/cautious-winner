@@ -16,8 +16,9 @@ set(SOURCES
     src/authWidget.cpp
     src/loginWidget.cpp
     src/guestWidget.cpp
-    src/regWidget.cpp
+    src/regWidget.cpp   
     src/validation.cpp
+    src/errorDialog.cpp
 )
 set(HEADERS
     src/startWidget.hpp
@@ -26,6 +27,7 @@ set(HEADERS
     src/guestWidget.hpp
     src/regWidget.hpp
     src/validation.hpp
+    src/errorDialog.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})

@@ -5,6 +5,8 @@
 #include <QPushButton>
 #include <QGroupBox>
 #include <QLineEdit>
+#include <QDebug>
+#include <QMessageBox>
 
 class regWidget : public QWidget {
     Q_OBJECT

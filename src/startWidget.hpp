@@ -8,12 +8,15 @@
 #include <QStackedWidget>
 #include <QIcon>
 #include <QToolTip>
+#include <QMessageBox>
+#include <QDebug>
 
 #include "authWidget.hpp"
 #include "loginWidget.hpp"
 #include "guestWidget.hpp"
 #include "regWidget.hpp"
 #include "validation.hpp"
+#include "errorDialog.hpp"
 
 class startWidget : public QWidget {
     Q_OBJECT
