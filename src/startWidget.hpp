@@ -17,7 +17,7 @@
 #include "regWidget.hpp"
 #include "validation.hpp"
 #include "errorDialog.hpp"
-#include "pSlot.hpp"
+#include "mapWidget.hpp"
 
 class startWidget : public QWidget {
     Q_OBJECT

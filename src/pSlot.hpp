@@ -13,6 +13,13 @@ namespace status {
     };
 }
 
+namespace alignment {
+    enum {
+        H = 0,
+        V = 1
+    };
+}
+
 class pSlot: public QPushButton {
     Q_OBJECT
 protected:
@@ -24,7 +31,7 @@ protected:
 
     int Status;
 public:
-    pSlot(int x, int y, int ID, QWidget* parent = nullptr);
+    pSlot(int x, int y, int ID, QWidget* parent = nullptr, int align = alignment::H);
     ~pSlot();
 
     void setID(int ID);

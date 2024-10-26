@@ -122,21 +122,13 @@ void startWidget::guestSlot() {
         dialog.exec();
 
     } else {
-        QWidget* widget = new QWidget();
-        QBoxLayout* lay = new QBoxLayout(QBoxLayout::TopToBottom, widget);
-
-        pSlot* slot = new pSlot(50, 50, -1, widget);
-        //slot->move(50, 50);  // Фіксовані координати
-        //slot->setPosition(50, 50);  // Фіксовані координати
-
-        widget->setWindowTitle("Slot");
-        widget->resize(200, 200);
-        widget->show();
+        mapWidget* map = new mapWidget();
+        map->show();
 
         QTimer::singleShot(5000, [=]() {
-            slot->setStatus(status::BOOKED);
+            map->pSlots[0]->setStatus(status::BOOKED);
                 QTimer::singleShot(5000, [=]() {
-                    slot->setStatus(status::BUSY);
+                    map->pSlots[0]->setStatus(status::BUSY);
             });
         });
 

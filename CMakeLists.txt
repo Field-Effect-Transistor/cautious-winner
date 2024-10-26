@@ -20,6 +20,7 @@ set(SOURCES
     src/validation.cpp
     src/errorDialog.cpp
     src/pSlot.cpp
+    src/mapWidget.cpp
 )
 set(HEADERS
     src/startWidget.hpp
@@ -30,6 +31,7 @@ set(HEADERS
     src/validation.hpp
     src/errorDialog.hpp
     src/pSlot.hpp
+    src/mapWidget.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})

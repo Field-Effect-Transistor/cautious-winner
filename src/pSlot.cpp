@@ -1,9 +1,9 @@
 #include "pSlot.hpp"
 
-pSlot::pSlot(int x, int y, int ID, QWidget* parent): QPushButton(QString::number(ID), parent) {
+pSlot::pSlot(int x, int y, int ID, QWidget* parent, int align): QPushButton(QString::number(ID), parent) {
     layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
     setPosition(x, y);
-    setFixedSize(30, 50);
+    align == alignment::H ? setFixedSize(50, 30) : setFixedSize(30, 50);
     setStatus(status::FREE);
 };
 
