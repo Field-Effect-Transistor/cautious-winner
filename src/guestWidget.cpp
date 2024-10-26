@@ -3,8 +3,8 @@
 guestWidget::guestWidget(QWidget *parent) : QWidget(parent) {
     try {
         layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
-        inputBoxLayout = new QBoxLayout(QBoxLayout::TopToBottom, this);
-        buttonBoxLayout = new QBoxLayout(QBoxLayout::TopToBottom, this);
+        inputBoxLayout = new QBoxLayout(QBoxLayout::TopToBottom);
+        buttonBoxLayout = new QBoxLayout(QBoxLayout::TopToBottom);
 
         inputGB = new QGroupBox(this);
         buttonGB = new QGroupBox(this);
@@ -38,7 +38,7 @@ guestWidget::guestWidget(QWidget *parent) : QWidget(parent) {
         layout->addWidget(buttonGB);
         layout->setAlignment(inputGB, Qt::AlignHCenter | Qt::AlignTop);
         layout->setAlignment(buttonGB, Qt::AlignHCenter | Qt::AlignTop);
-        setLayout(layout);
+        //setLayout(layout);
         setWindowTitle("Guest login");
     } catch (const std::bad_alloc& e) {
         qCritical() << "Memory allocation failed:" << e.what();

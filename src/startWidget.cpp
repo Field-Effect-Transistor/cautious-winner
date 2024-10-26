@@ -1,9 +1,9 @@
 #include "startWidget.hpp"
+#include <QTimer>
 
-startWidget::startWidget(QWidget *parent)
-    : QWidget(parent) {
+startWidget::startWidget(QWidget *parent) : QWidget(parent) {
     layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
-    alignLayout = new QBoxLayout(QBoxLayout::TopToBottom, this);
+    alignLayout = new QBoxLayout(QBoxLayout::TopToBottom);
     
     //widgets and buttons binding
     auth = new authWidget(this);
@@ -65,7 +65,7 @@ startWidget::startWidget(QWidget *parent)
         alignLayout->setAlignment(Qt::AlignCenter);
         alignLayout->setSizeConstraint(QLayout::SetFixedSize);
 
-    setLayout(layout);
+    //setLayout(layout);
     title = "Parking System";
     setWindowTitle(title);
     setWindowIcon(QIcon("resources/pictures/loginPic.ico"));
@@ -116,23 +116,30 @@ void startWidget::loginSlot() {
 }
 
 void startWidget::guestSlot() {
-    if (validation::isEmailInvalid(guest->emailIn->text())) {
-        QDialog dialog(this);
-        dialog.setWindowTitle("Error");
-        QVBoxLayout layout(&dialog);
-
-        QLabel label("Wrong email", &dialog);
-        layout.addWidget(&label);
-
-        QPushButton *okButton = new QPushButton("OK");
-        layout.addWidget(okButton);
+    if (false and validation::isEmailInvalid(guest->emailIn->text())) {
         
-        connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
+        errorDialog dialog("Wrong email or password", this);
+        dialog.exec();
 
-        dialog.setFixedSize(200, 100); // Set fixed size for the dialog
-        dialog.exec(); // Show the dialog
     } else {
-        hide();
+        QWidget* widget = new QWidget();
+        QBoxLayout* lay = new QBoxLayout(QBoxLayout::TopToBottom, widget);
+
+        pSlot* slot = new pSlot(50, 50, -1, widget);
+        //slot->move(50, 50);  // Фіксовані координати
+        //slot->setPosition(50, 50);  // Фіксовані координати
+
+        widget->setWindowTitle("Slot");
+        widget->resize(200, 200);
+        widget->show();
+
+        QTimer::singleShot(5000, [=]() {
+            slot->setStatus(status::BOOKED);
+                QTimer::singleShot(5000, [=]() {
+                    slot->setStatus(status::BUSY);
+            });
+        });
+
     }
 }
 

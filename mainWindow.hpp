@@ -13,22 +13,6 @@
 class mainWindow : public QWidget {
     Q_OBJECT
 protected:
-    QBoxLayout* layout;
-    QBoxLayout* menuLayout;
-    QBoxLayout* stackedLayout;
-    QBoxLayout* leftLayout;
-    QBoxLayout* mapLayout;
-
-    QStackedWidget* workspace;
-
-    QGroupBox* menuGB;
-    QGroupBox* workspaceGB;
-    QGroupBox* stackedGB;
-
-    QLabel* menutitle;
-
-    QPushButton* 
-
 
 public:
     explicit mainWindow(QWidget *parent = nullptr);

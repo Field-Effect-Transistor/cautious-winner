@@ -3,7 +3,7 @@
 authWidget::authWidget(QWidget *parent) : QWidget(parent) {
     try {
         layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
-        authBoxLayout = new QBoxLayout(QBoxLayout::TopToBottom, this);
+        authBoxLayout = new QBoxLayout(QBoxLayout::TopToBottom);
         
         authGB = new QGroupBox(this);
 
@@ -25,7 +25,7 @@ authWidget::authWidget(QWidget *parent) : QWidget(parent) {
         layout->setAlignment(authGB, Qt::AlignHCenter | Qt::AlignTop);
         layout->setSizeConstraint(QLayout::SetFixedSize);
         
-        setLayout(layout);
+        //setLayout(layout);
     } catch (const std::bad_alloc& e) {
         qCritical() << "Memory allocation failed:" << e.what();
         QMessageBox::critical(this, "Error", "Failed to initialize UI due to memory allocation error.");
