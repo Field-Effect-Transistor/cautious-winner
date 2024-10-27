@@ -1,6 +1,5 @@
 #pragma once
 
-//#include <QLabel>
 #include <QBoxLayout>
 
 #include <array>
@@ -11,7 +10,7 @@ class mapWidget : public QWidget {
     Q_OBJECT
 public:
     QBoxLayout* layout;
-    std::array<pSlot*, 50> pSlots;  // Оголошення масиву без ініціалізації
+    std::array<pSlot*, 40> pSlots;  // Оголошення масиву без ініціалізації
 
 
 public:

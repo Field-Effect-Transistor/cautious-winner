@@ -15,10 +15,9 @@
 #include "loginWidget.hpp"
 #include "guestWidget.hpp"
 #include "regWidget.hpp"
-#include "validation.hpp"
+#include "../../../include/validation.hpp"
 #include "errorDialog.hpp"
-#include "mapWidget.hpp"
-#include "mainWindow.hpp"
+#include "../main/mainWindow.hpp"
 
 class startWidget : public QWidget {
     Q_OBJECT

@@ -25,7 +25,7 @@ startWidget::startWidget(QWidget *parent) : QWidget(parent) {
     //picture
     try {
         picLabel = new QLabel(this);
-        QPixmap pixmap("resources/pictures/loginPic282x260.png");
+        QPixmap pixmap("client/resources/pictures/loginPic282x260.png");
         if (pixmap.isNull()) {
             throw std::runtime_error("Image could not be loaded");
         }
@@ -67,7 +67,7 @@ startWidget::startWidget(QWidget *parent) : QWidget(parent) {
     //setLayout(layout);
     title = "Parking System";
     setWindowTitle(title);
-    setWindowIcon(QIcon("resources/pictures/loginPic.ico"));
+    setWindowIcon(QIcon("client/resources/pictures/loginPic.ico"));
 }
 
 startWidget::~startWidget() {}
@@ -111,6 +111,8 @@ void startWidget::loginSlot() {
 
     } else {
         hide();
+        mainWindow* mainW = new mainWindow();
+        mainW->show();
     }
 }
 
@@ -142,7 +144,7 @@ void startWidget::regSlot() {
         errorDialog dialog("Wrong license", this);
         dialog.exec();
     } else {
-        hide();
+        switchToLogin();
     }
 }
 

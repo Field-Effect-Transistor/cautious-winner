@@ -55,7 +55,7 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
     
     setLayout(layout);
     setWindowTitle("Parking System");
-    setWindowIcon(QIcon("resources/pictures/loginPic.ico"));
+    setWindowIcon(QIcon("client/resources/pictures/loginPic.ico"));
 }
 
 mainWindow::~mainWindow() {} ;

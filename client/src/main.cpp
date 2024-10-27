@@ -4,7 +4,7 @@
 
 #include <array>
 
-#include "startWidget.hpp"
+#include "auth/startWidget.hpp"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
