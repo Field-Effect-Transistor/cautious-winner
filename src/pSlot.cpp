@@ -3,7 +3,7 @@
 pSlot::pSlot(int x, int y, int ID, QWidget* parent, int align): QPushButton(QString::number(ID), parent) {
     layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
     setPosition(x, y);
-    align == alignment::H ? setFixedSize(50, 30) : setFixedSize(30, 50);
+    align ? setFixedSize(30, 50) : setFixedSize(50, 30);
     setStatus(status::FREE);
 };
 

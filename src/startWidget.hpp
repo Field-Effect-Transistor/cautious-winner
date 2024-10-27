@@ -18,6 +18,7 @@
 #include "validation.hpp"
 #include "errorDialog.hpp"
 #include "mapWidget.hpp"
+#include "mainWindow.hpp"
 
 class startWidget : public QWidget {
     Q_OBJECT

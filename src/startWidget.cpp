@@ -1,5 +1,4 @@
 #include "startWidget.hpp"
-#include <QTimer>
 
 startWidget::startWidget(QWidget *parent) : QWidget(parent) {
     layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
@@ -122,16 +121,9 @@ void startWidget::guestSlot() {
         dialog.exec();
 
     } else {
-        mapWidget* map = new mapWidget();
-        map->show();
-
-        QTimer::singleShot(5000, [=]() {
-            map->pSlots[0]->setStatus(status::BOOKED);
-                QTimer::singleShot(5000, [=]() {
-                    map->pSlots[0]->setStatus(status::BUSY);
-            });
-        });
-
+        hide();
+        mainWindow* mainW = new mainWindow();
+        mainW->show();
     }
 }
 
