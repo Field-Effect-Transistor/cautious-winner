@@ -2,14 +2,18 @@
 #include <QLabel>
 #include <QWidget>
 
-#include "login.hpp"
-#include "mainWidget.hpp"
+#include <array>
+
+#include "startWidget.hpp"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
+    //app.setStyleSheet("QToolTip { color: #6C0808; }");
+        
+    std::array<QLabel, 5> labels;
 
-    MainWidget main;
-    main.show();
+    startWidget w;
+    w.show();
 
     return app.exec();
 }

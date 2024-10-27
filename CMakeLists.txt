@@ -12,12 +12,28 @@ find_package(Qt5 REQUIRED COMPONENTS Widgets)
 include_directories(src)
 set(SOURCES
     src/main.cpp
-    src/login.cpp
-    src/mainWidget.cpp
+    src/startWidget.cpp
+    src/authWidget.cpp
+    src/loginWidget.cpp
+    src/guestWidget.cpp
+    src/regWidget.cpp   
+    src/validation.cpp
+    src/errorDialog.cpp
+    src/pSlot.cpp
+    src/mapWidget.cpp
+    src/mainWindow.cpp
 )
 set(HEADERS
-    src/login.hpp
-    src/mainWidget.hpp
+    src/startWidget.hpp
+    src/authWidget.hpp
+    src/loginWidget.hpp
+    src/guestWidget.hpp
+    src/regWidget.hpp
+    src/validation.hpp
+    src/errorDialog.hpp
+    src/pSlot.hpp
+    src/mapWidget.hpp
+    src/mainWindow.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
