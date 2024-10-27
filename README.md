@@ -50,7 +50,7 @@ ninja -C build -v -d stats
 Once the build is complete, run the executable:
 
 ```bash
-./build/parking-system
+./build/parking_system_client
 ```
 
 ## Build without Ninja
@@ -61,7 +61,7 @@ To build the project without using Ninja, use the following command:
 rm -rf build
 cmake -S . -B build
 make -C build
-./build/parking-system
+./build/parking_system_client
 ```
 
 ## Project Structure
