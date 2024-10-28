@@ -5,6 +5,7 @@ pSlot::pSlot(int x, int y, int ID, QWidget* parent, int align): QPushButton(QStr
     setPosition(x, y);
     align ? setFixedSize(30, 50) : setFixedSize(50, 30);
     setStatus(status::FREE);
+    setID(ID);
 };
 
 pSlot::~pSlot() {}

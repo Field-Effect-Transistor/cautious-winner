@@ -9,12 +9,17 @@
 class mapWidget : public QWidget {
     Q_OBJECT
 public:
+    static const int pSlotCount = 40;
+    //std::array<pSlot*, pSlotCount> pSlots;
+    pSlot* pSlots[pSlotCount];
+    
+protected:
     QBoxLayout* layout;
-    std::array<pSlot*, 40> pSlots;  // Оголошення масиву без ініціалізації
 
 
 public:
     mapWidget(QWidget* parent = nullptr);
     ~mapWidget();
+
 
 };
