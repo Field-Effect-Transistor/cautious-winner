@@ -9,9 +9,7 @@
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
     //app.setStyleSheet("QToolTip { color: #6C0808; }");
-        
-    std::array<QLabel, 5> labels;
-
+    
     startWidget w;
     w.show();
 

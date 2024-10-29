@@ -29,6 +29,11 @@ mapWidget::mapWidget(QWidget* parent) : QWidget(parent) {
 
         setWindowTitle("Parking Map");
         setFixedSize(365, 420);
+
+
+        pSlots[1]->setStatus(status::BOOKED);
+        pSlots[3]->setStatus(status::BUSY);
+
 }
 
 mapWidget::~mapWidget() {}

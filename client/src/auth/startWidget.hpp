@@ -1,6 +1,10 @@
 #pragma once
 
+#include <QApplication>
+#include <QComboBox>
 #include <QWidget>
+#include <QCheckBox>
+#include <QStyle>
 #include <QBoxLayout>
 #include <QLabel>
 #include <QPixmap>
@@ -9,6 +13,7 @@
 #include <QIcon>
 #include <QToolTip>
 #include <QMessageBox>
+#include <QPushButton>
 #include <QDebug>
 
 #include "authWidget.hpp"
@@ -30,8 +35,11 @@ protected:
 
     QLabel* mesg;
     QLabel* picLabel;
+    QPixmap pixmap;
 
     QStackedWidget* stackedWidget;
+
+    QPushButton* settingsBtn;
 
     authWidget* auth;
     loginWidget* login;
@@ -55,7 +63,8 @@ private slots:
     void regSlot();
     void passwdValidation();
     void rPasswdValidation();
-};
+    void settingsSlot();
+};  
 
 namespace ID {
     enum {

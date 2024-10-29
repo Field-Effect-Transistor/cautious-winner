@@ -36,7 +36,7 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
     menuGB->setLayout(menuLayout);
     menuLayout->addWidget(parkBtn);
     menuLayout->addWidget(parkHistoryBtn);
-    parkHistoryBtn->setMinimumWidth(100);
+    parkHistoryBtn->setMinimumWidth(190);
     menuLayout->addWidget(bookBtn);
     menuLayout->addWidget(exitBtn);
     //menuLayout->setSizeConstraint(QLayout::SetFixedSize);
