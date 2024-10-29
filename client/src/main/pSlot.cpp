@@ -5,6 +5,7 @@ pSlot::pSlot(int x, int y, int ID, QWidget* parent, int align): QPushButton(QStr
     setPosition(x, y);
     align ? setFixedSize(30, 50) : setFixedSize(50, 30);
     setStatus(status::FREE);
+    setID(ID);
 };
 
 pSlot::~pSlot() {}
@@ -33,13 +34,34 @@ void pSlot::setStatus(int status) {
     Status = status;
     switch (status) {
         case status::FREE:
-            setStyleSheet("background-color: rgb(0, 255, 0);");
+            setStyleSheet("QPushButton { "
+              "font-size: 16px; "
+              "color: white; "
+              "background-color: rgb(0, 180, 0); "
+              "border: none; "
+              "border-radius: 5px; "
+              "padding: 5px; "
+              "}");
             break;
         case status::BUSY:
-            setStyleSheet("background-color: rgb(255, 0, 0);");
+            setStyleSheet("QPushButton { "
+              "font-size: 16px; "
+              "color: white; "
+              "background-color: rgb(180, 0, 0); "
+              "border: none; "
+              "border-radius: 5px; "
+              "padding: 5px; "
+              "}");
             break;
         case status::BOOKED:
-            setStyleSheet("background-color: rgb(0, 0, 255);");
+            setStyleSheet("QPushButton { "
+              "font-size: 16px; "
+              "color: white; "
+              "background-color: rgb(0, 0, 180); "
+              "border: none; "
+              "border-radius: 5px; "
+              "padding: 5px; "
+              "}");
             break;
         default:
             break;

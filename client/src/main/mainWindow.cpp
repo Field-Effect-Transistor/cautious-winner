@@ -1,4 +1,5 @@
 #include "mainWindow.hpp"
+#include <iostream>
 
 mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
     layout = new QBoxLayout(QBoxLayout::LeftToRight, this);
@@ -18,6 +19,8 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
     actionsWidget = new QStackedWidget(this);
 
     map = new mapWidget(this);
+    park = new parkWidget(this);
+    book = new bookWidget(this);
 
     parkBtn = new QPushButton("Park", this);
     parkHistoryBtn = new QPushButton("Park History", this);
@@ -33,13 +36,21 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
     menuGB->setLayout(menuLayout);
     menuLayout->addWidget(parkBtn);
     menuLayout->addWidget(parkHistoryBtn);
-    parkHistoryBtn->setMinimumWidth(100);
+    parkHistoryBtn->setMinimumWidth(190);
     menuLayout->addWidget(bookBtn);
     menuLayout->addWidget(exitBtn);
-    menuLayout->setSizeConstraint(QLayout::SetFixedSize);
+    //menuLayout->setSizeConstraint(QLayout::SetFixedSize);
 
     actionsGB->setLayout(actionsLayout);
     actionsLayout->addWidget(actionsWidget);
+    actionsWidget->addWidget(park);
+    actionsWidget->addWidget(book);
+    connect(parkBtn, &QPushButton::clicked, this, [&](){
+        actionsWidget->setCurrentIndex(0);
+    });
+    connect(bookBtn, &QPushButton::clicked, this, [&](){
+        actionsWidget->setCurrentIndex(1);
+    });
 
     leftLayout->addWidget(menuGB);
     leftLayout->addWidget(actionsGB);
@@ -52,8 +63,53 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
     layout->addWidget(alignWidget);
 
     alignLayout->setAlignment(leftLayout, Qt::AlignTop);
-    
-    setLayout(layout);
+
+    for(int i = 0; i < mapWidget::pSlotCount; ++i) {
+    connect(map->pSlots[i], &pSlot::clicked, this, [=](){  // Capture i by value
+        //std::cout << i << std::endl;
+
+        QString temp;
+        switch (map->pSlots[i]->getStatus()) {
+            case status::FREE:
+                temp = "Free";
+                break;
+            case status::BUSY:
+                temp = "Busy";
+                break;
+            case status::BOOKED:
+                temp = "Booked";
+                break;
+            default:
+                break;
+        }
+
+        park->setCurrPSlotID(map->pSlots[i]->getID(), temp);
+    });
+
+    connect(map->pSlots[i], &pSlot::clicked, this, [=](){  // Capture i by value
+        //std::cout << i << std::endl;
+
+        QString temp;
+        switch (map->pSlots[i]->getStatus()) {
+            case status::FREE:
+                temp = "Free";
+                break;
+            case status::BUSY:
+                temp = "Busy";
+                break;
+            case status::BOOKED:
+                temp = "Booked";
+                break;
+            default:
+                break;
+        }
+
+        book->setCurrPSlotID(map->pSlots[i]->getID(), temp);
+    });
+
+    }
+
+    //setLayout(layout);
     setWindowTitle("Parking System");
     setWindowIcon(QIcon("client/resources/pictures/loginPic.ico"));
 }

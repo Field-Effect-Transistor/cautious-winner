@@ -75,3 +75,18 @@ The project is built with C++17 and uses the following CMake settings:
 
 - `CMAKE_AUTOMOC`, `CMAKE_AUTORCC`, `CMAKE_AUTOUIC` are enabled to automate Qt's MOC, RCC, and UIC processes.
 - The Qt5 Widgets module is required and linked with the target.
+
+## TroubleShooting
+
+On Ubuntu 22.04 may occure error:
+
+```bash
+./build/parking_system_client
+./build/parking_system_client: symbol lookup error: /snap/core20/current/lib/x86_64-linux-gnu/libpthread.so.0: undefined symbol: __libc_pthread_init, version GLIBC_PRIVATE
+```
+
+just try to unset `GTK_PATH`:
+
+```bash
+unset GTK_PATH
+```

@@ -8,8 +8,11 @@
 #include <QPixmap>
 #include <QIcon>
 #include <QPushButton>
+#include <QSignalMapper>
 
 #include "mapWidget.hpp"
+#include "parkWidget.hpp"
+#include "bookWidget.hpp"
 
 class mainWindow : public QWidget {
     Q_OBJECT
@@ -30,6 +33,8 @@ protected:
     QStackedWidget* actionsWidget;
 
     mapWidget* map;
+    parkWidget* park;
+    bookWidget* book;
 
     QWidget* alignWidget;
     //QLabel* mapTableLabel;
@@ -40,7 +45,6 @@ protected:
     QPushButton* parkHistoryBtn;
     QPushButton* bookBtn;
     QPushButton* exitBtn;
-
 
 public:
     explicit mainWindow(QWidget *parent = nullptr);

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.30.0)
+cmake_minimum_required(VERSION 3.5)
 set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_AUTOMOC ON)
@@ -21,6 +21,8 @@ set(CLIENT_SOURCES
     client/src/main/pSlot.cpp
     client/src/main/mapWidget.cpp
     client/src/main/mainWindow.cpp
+    client/src/main/parkWidget.cpp
+    client/src/main/bookWidget.cpp
 )
 set(CLIENT_HEADERS
     client/src/auth/startWidget.hpp
@@ -33,6 +35,8 @@ set(CLIENT_HEADERS
     client/src/main/pSlot.hpp
     client/src/main/mapWidget.hpp
     client/src/main/mainWindow.hpp
+    client/src/main/parkWidget.hpp
+    client/src/main/bookWidget.hpp
 )
 
 add_executable(${PROJECT_NAME}_client ${CLIENT_SOURCES} ${CLIENT_HEADERS})
