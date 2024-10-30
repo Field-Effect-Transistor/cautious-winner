@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="resources/">
+        <file alias="icon">icons/loginPic.ico</file>
+        <file>pictures/loginPic.png</file>
+        <file>pictures/loginPic250X250.png</file>
+        <file>pictures/loginPic282x260_black.png</file>
+        <file>pictures/loginPic282x260_darkgray.png</file>
+        <file alias="mainPic">pictures/loginPic282x260.png</file>
+        <file>pictures/loginPic400X400.png</file>
+        <file>pictures/loginPicSrc.jpg</file>
+    </qresource>
+</RCC>

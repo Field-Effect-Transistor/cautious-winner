@@ -10,6 +10,9 @@ project(parking_system VERSION 0.1.0)
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
 set(CLIENT_SOURCES
+    client/resources/resources.qrc
+    client/themes/themes.qrc
+    
     client/src/main.cpp
     client/src/auth/startWidget.cpp
     client/src/auth/authWidget.cpp

@@ -39,7 +39,6 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
     parkHistoryBtn->setMinimumWidth(190);
     menuLayout->addWidget(bookBtn);
     menuLayout->addWidget(exitBtn);
-    //menuLayout->setSizeConstraint(QLayout::SetFixedSize);
 
     actionsGB->setLayout(actionsLayout);
     actionsLayout->addWidget(actionsWidget);
@@ -111,7 +110,7 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
 
     //setLayout(layout);
     setWindowTitle("Parking System");
-    setWindowIcon(QIcon("client/resources/pictures/loginPic.ico"));
+    setWindowIcon(QIcon(":resources/icon"));
 }
 
 mainWindow::~mainWindow() {} ;

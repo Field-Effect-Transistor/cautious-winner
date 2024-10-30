@@ -31,7 +31,7 @@ startWidget::startWidget(QWidget *parent) : QWidget(parent) {
     //picture
     try {
         picLabel = new QLabel(this);
-        pixmap = QPixmap("client/resources/pictures/loginPic282x260.png");
+        pixmap = QPixmap(":resources/mainPic");
         if (pixmap.isNull()) {
             throw std::runtime_error("Image could not be loaded");
         }
@@ -76,7 +76,7 @@ startWidget::startWidget(QWidget *parent) : QWidget(parent) {
     //setLayout(layout);
     title = "Parking System";
     setWindowTitle(title);
-    setWindowIcon(QIcon("client/resources/pictures/loginPic.ico"));
+    setWindowIcon(QIcon(":resources/icon"));
 }
 
 startWidget::~startWidget() {}
@@ -202,7 +202,6 @@ void startWidget::rPasswdValidation() {
 #include <QVBoxLayout>
 
 void startWidget::settingsSlot() {
-    // Створюємо діалогове вікно для налаштувань
     QDialog* dialog = new QDialog(this);
     dialog->setWindowTitle("Settings");
 
@@ -220,22 +219,20 @@ void startWidget::settingsSlot() {
     dialog->setLayout(layout);
     dialog->resize(200, 100);
 
-    // Обробник зміни вибраної теми
     connect(themeSelector, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [themeSelector]() {
         if(themeSelector->currentIndex()) {
             QString theme;
             switch (themeSelector->currentIndex()) {
                 case 1:
-                    theme = "client/themes/light_theme.qss";
+                    theme = ":themes/light";
                     break;
                 case 2:
-                    theme = "client/themes/dark_theme.qss";
+                    theme = ":themes/dark";
                     break;
                 case 3:
-                    theme = "client/themes/hacker_theme.qss";
+                    theme = ":themes/hacker";
                     break;
                 default:
-                    theme = "client/themes/light.qss";
                     break;
             }
             QFile file(theme);
@@ -243,9 +240,10 @@ void startWidget::settingsSlot() {
             QString styleSheet = file.readAll();
             qApp->setStyleSheet(styleSheet);
             file.close();
+        } else {
+            qApp->setStyleSheet("");
         }
     });
 
-    // Відображення діалогу
     dialog->exec();
 }
