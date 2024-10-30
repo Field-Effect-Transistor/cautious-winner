@@ -206,17 +206,14 @@ void startWidget::settingsSlot() {
     QDialog* dialog = new QDialog(this);
     dialog->setWindowTitle("Settings");
 
-    // Створюємо віджети для діалогу
     QLabel* themeLabel = new QLabel("Choose theme", dialog);
     QComboBox* themeSelector = new QComboBox(dialog);
 
-    // Додаємо варіанти тем
     themeSelector->addItem("System");
     themeSelector->addItem("Light");
     themeSelector->addItem("Dark");
     themeSelector->addItem("Hackers");
 
-    // Створюємо макет для діалогу
     QVBoxLayout* layout = new QVBoxLayout(dialog);
     layout->addWidget(themeLabel);
     layout->addWidget(themeSelector);
@@ -225,44 +222,27 @@ void startWidget::settingsSlot() {
 
     // Обробник зміни вибраної теми
     connect(themeSelector, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [themeSelector]() {
-        // Вибір теми на основі індексу
-        switch (themeSelector->currentIndex()) {
-            case 0: // Системна тема
-                qApp->setStyleSheet("");
-                break;
-            case 1: // Світла тема
-                qApp->setStyleSheet(
-                    "QWidget { background-color: #F0F0F0; color: #000000; }"
-                    "QPushButton { background-color: #E0E0E0; border: 1px solid #A0A0A0; padding: 5px; }"
-                    "QPushButton:hover { background-color: #D0D0D0; }"
-                    "QLineEdit, QTextEdit, QComboBox, QListWidget { background-color: #FFFFFF; color: #000000; border: 1px solid #A0A0A0; }"
-                    "QLabel { color: #202020; }"
-                    "QMenu { background-color: #F0F0F0; color: #000000; border: 1px solid #A0A0A0; }"
-                    "QMenu::item:selected { background-color: #D0D0D0; }"
-                );
-                break;
-            case 2: // Темна тема
-                qApp->setStyleSheet(
-                    "QWidget { background-color: #333333; color: #EEEEEE; }"
-                    "QPushButton { background-color: #555555; border: 1px solid #777777; padding: 5px; }"
-                    "QPushButton:hover { background-color: #666666; }"
-                    "QLineEdit, QTextEdit, QComboBox, QListWidget { background-color: #444444; color: #EEEEEE; border: 1px solid #666666; }"
-                    "QLabel { color: #FFFFFF; }"
-                    "QMenu { background-color: #333333; color: #EEEEEE; border: 1px solid #555555; }"
-                    "QMenu::item:selected { background-color: #666666; }"
-                );
-                break;
-            case 3: // Хакерська тема
-                qApp->setStyleSheet(
-                    "QWidget { background-color: black; color: #00FF00; font-family: monospace; }"
-                    "QPushButton { background-color: #001100; color: #00FF00; border: 1px solid #00AA00; padding: 5px; }"
-                    "QPushButton:hover { background-color: #002200; }"
-                    "QLineEdit, QTextEdit, QComboBox, QListWidget { background-color: #001100; color: #00FF00; border: 1px solid #00AA00; }"
-                    "QLabel { color: #00FF00; }"
-                    "QMenu { background-color: #001100; color: #00FF00; border: 1px solid #00AA00; }"
-                    "QMenu::item:selected { background-color: #002200; }"
-                );
-                break;
+        if(themeSelector->currentIndex()) {
+            QString theme;
+            switch (themeSelector->currentIndex()) {
+                case 1:
+                    theme = "client/themes/light_theme.qss";
+                    break;
+                case 2:
+                    theme = "client/themes/dark_theme.qss";
+                    break;
+                case 3:
+                    theme = "client/themes/hacker_theme.qss";
+                    break;
+                default:
+                    theme = "client/themes/light.qss";
+                    break;
+            }
+            QFile file(theme);
+            file.open(QFile::ReadOnly);
+            QString styleSheet = file.readAll();
+            qApp->setStyleSheet(styleSheet);
+            file.close();
         }
     });
 

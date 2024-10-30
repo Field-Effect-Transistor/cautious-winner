@@ -1,0 +1,7 @@
+QWidget { background-color: black; color: #00FF00; font-family: monospace; }
+QPushButton { background-color: #001100; color: #00FF00; border: 1px solid #00AA00; padding: 5px; }
+QPushButton:hover { background-color: #002200; }
+QLineEdit, QTextEdit, QComboBox, QListWidget { background-color: #001100; color: #00FF00; border: 1px solid #00AA00; }
+QLabel { color: #00FF00; }
+QMenu { background-color: #001100; color: #00FF00; border: 1px solid #00AA00; }
+QMenu::item:selected { background-color: #002200; }

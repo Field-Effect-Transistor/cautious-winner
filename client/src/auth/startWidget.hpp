@@ -15,6 +15,7 @@
 #include <QMessageBox>
 #include <QPushButton>
 #include <QDebug>
+#include <QFile>
 
 #include "authWidget.hpp"
 #include "loginWidget.hpp"

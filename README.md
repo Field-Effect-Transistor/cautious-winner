@@ -4,7 +4,7 @@ This project is a parking management system developed in C++ using Qt5 and built
 
 ## Requirements
 
-- [CMake](https://cmake.org/download/) 3.30.0 or higher
+- [CMake](https://cmake.org/download/) 3.5 or higher
 - [Ninja](https://ninja-build.org/) build system (optional, but recommended)
 - [Qt5](https://doc.qt.io/qt-5/index.html) (Widgets module)
 
