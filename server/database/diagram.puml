@@ -11,27 +11,21 @@ entity "Users" as users {
 entity "Auth" as auth {
     * user_id   : INTEGER <<PK>>
     --
-    lastAuth    : DATETIME
-    created_at  : DATETIME
+    lastAuth    : INTEGER
+    created_at  : INTEGER
 }
 
-entity "PSlots" as pSlots {
-    * slot_id   : INTEGER <<PK>>
+entity "Parking" as parking {
+    * park_id   : INTEGER <<PK>>
     --
-    user_id     : INTEGER <<FK>>
-}
-
-entity "Booking" as booking {
-    * book_id   : INTEGER <<PK>>
-    --
-    start_date  : DATETIME
-    end_date    : DATETIME
+    tupe        : INTEGER
+    start_date  : INTEGER
+    end_date    : INTEGER
     slot_id     : INTEGER <<FK>>
     user_id     : INTEGER <<FK>>
+    lPlate      : TEXT
 }
 
-users ||--o| pSlots : "user_id"
-users }o--o{ booking : "user_id"
+users }o--o{ parking : "user_id"
 users ||--|| auth   : "user_id"
-pSlots ||--|| booking : "slot_id"
 @enduml

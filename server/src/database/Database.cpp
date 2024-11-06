@@ -25,6 +25,7 @@ void Database::execFromFile(const std::string &filePath) {
         std::stringstream sql;
 
         while (std::getline(file, line)) {
+            //std::cout << line << std::endl;
             if (line.empty() || line[0] == '-') continue;
             sql << line;
             if (line.back() == ';') {
@@ -38,8 +39,14 @@ void Database::execFromFile(const std::string &filePath) {
     }
 }
 
-void Database::exec(const std::string &querry) {
-    int result = sqlite3_exec(db, querry.c_str(), nullptr, nullptr, nullptr);
+void Database::exec(const std::string &query) {
+    char* errMsg = nullptr;
+    int result = sqlite3_exec(db, query.c_str(), nullptr, nullptr, &errMsg);
+    if (result != SQLITE_OK) {
+        std::string errorMsg = "SQL error: " + std::string(errMsg);
+        sqlite3_free(errMsg);
+        throw std::runtime_error(errorMsg);
+    }
 }
 
 sqlite3* Database::getDB(void) const {

@@ -7,10 +7,8 @@ int main(int argc, char** argv) {
     Database db("server/database/db.sqlite");
 
     User user(db);
-
-    if(user.findUser("user8@example.com").getLastHandler() == User::Handler::SUCCESS) {
-        std::cout << user.toJson() << std::endl;
-    }
+    user.createUser("genocide@isUnixBad.com", "12345678", "1234");
+    std::cout << user.getLastHandler() << std::endl;
 
     return 0;
-} 
+}

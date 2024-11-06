@@ -1,31 +1,26 @@
---init_db.sql
+-- init_db.sql
 
 CREATE TABLE IF NOT EXISTS Users (
     user_id INTEGER PRIMARY KEY AUTOINCREMENT,
     email TEXT NOT NULL UNIQUE,
     password TEXT NOT NULL,
-    lPlate TEXT UNIQUE
+    lPlate TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS Auth (
     user_id INTEGER PRIMARY KEY,
-    lastAuth DATETIME,
-    created_at DATETIME,
+    lastAuth INTEGER,
+    created_at INTEGER,
     FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE
 );
 
-CREATE TABLE IF NOT EXISTS PSlots (
-    slot_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id INTEGER,
-    FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE SET NULL
-);
-
-CREATE TABLE IF NOT EXISTS Booking (
-    book_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    start_date DATETIME NOT NULL,
-    end_date DATETIME NOT NULL,
+CREATE TABLE IF NOT EXISTS Parking (
+    park_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    type INTEGER,
+    start_date INTEGER NOT NULL,
+    end_date INTEGER NOT NULL,
     slot_id INTEGER,
     user_id INTEGER,
-    FOREIGN KEY (slot_id) REFERENCES PSlots(slot_id) ON DELETE CASCADE,
+    lPlate TEXT,
     FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE
 );

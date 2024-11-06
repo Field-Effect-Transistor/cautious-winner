@@ -6,11 +6,6 @@ User::User(Database& db) : db(db) {
 
 User::~User() {};
 
-#include <stdexcept>
-#include <sqlite3.h>
-#include <string>
-#include "User.hpp"
-
 User& User::findUser(int id, int& handler) {
     std::string query = "SELECT user_id, email, password, lPlate FROM Users WHERE user_id = ?";
     sqlite3_stmt* stmt;
@@ -71,13 +66,18 @@ User& User::findUser(std::string email_, int& handler) {
     return *this;
 }
 
-User& User::createUser(std::string email_, std::string password_, std::string lPlate_) {
+User& User::createUser(std::string email_, std::string password_, std::string lPlate_, int& handler) {
     std::string query = "INSERT INTO Users (email, password, lPlate) VALUES (?, ?, ?)";
     sqlite3_stmt* stmt;
-    
+
+    this->email = email_;
+    this->password = password_;
+    this->lPlate = lPlate_;
+
     // Підготовка запиту
     if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
-        throw std::runtime_error("Failed to prepare createUser statement");
+        handler = Handler::ERROR;
+        return *this;
     }
 
     // Прив'язка параметрів
@@ -85,37 +85,39 @@ User& User::createUser(std::string email_, std::string password_, std::string lP
     sqlite3_bind_text(stmt, 2, password_.c_str(), -1, SQLITE_STATIC);
     sqlite3_bind_text(stmt, 3, lPlate_.c_str(), -1, SQLITE_STATIC);
 
-    // Виконання запиту та перевірка результату
-    if (sqlite3_step(stmt) != SQLITE_DONE) {
+    if (sqlite3_step(stmt) == SQLITE_DONE) {
         sqlite3_finalize(stmt);
-        throw std::runtime_error("Failed to create user");
-    }
+        if (findUser(email_).lastHandler == Handler::SUCCESS) {
+            query = "INSERT INTO Auth (user_id, lastAuth, created_at) VALUES (?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
 
-    // Завершення запиту
-    sqlite3_finalize(stmt);
-    return findUser(email_);
-}
+            sqlite3_stmt* stmt2;
+            if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt2, nullptr) != SQLITE_OK) {
+                handler = Handler::ERROR;
+                return *this;
+            }
 
-void User::deleteUser(int id) {
-    std::string query = "DELETE FROM Users WHERE user_id = ?";
-    sqlite3_stmt* stmt;
-    
-    // Підготовка запиту
-    if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
-        throw std::runtime_error("Failed to prepare deleteUser statement");
-    }
+            sqlite3_bind_int(stmt2, 1, id);
 
-    // Прив'язка параметра `id`
-    sqlite3_bind_int(stmt, 1, id);  
+            if (sqlite3_step(stmt2) == SQLITE_DONE) {
+                handler = Handler::SUCCESS;
+                sqlite3_finalize(stmt2);
+            } else {
+                handler = Handler::ERROR;
+                sqlite3_finalize(stmt2);
+            }
+        }
 
-    // Виконання запиту та перевірка результату
-    if (sqlite3_step(stmt) != SQLITE_DONE) {
+        return *this;
+    } else if (std::string(sqlite3_errmsg(db.getDB()))
+        .find("UNIQUE constraint failed: Users.email") != std::string::npos) {
+        handler = Handler::NOT_UNIQUE_USER;
         sqlite3_finalize(stmt);
-        throw std::runtime_error("Failed to delete user");
+        return *this;
+    } else {
+        handler = Handler::ERROR;
+        sqlite3_finalize(stmt);
+        return *this;
     }
-
-    // Завершення запиту
-    sqlite3_finalize(stmt);
 }
 
 bool User::auth(std::string email_, std::string password_) {
