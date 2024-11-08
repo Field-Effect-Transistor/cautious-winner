@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS Parking (
     park_id INTEGER PRIMARY KEY AUTOINCREMENT,
     type INTEGER,
     start_date INTEGER NOT NULL,
-    end_date INTEGER NOT NULL,
+    end_date INTEGER,
     slot_id INTEGER,
     user_id INTEGER,
     lPlate TEXT,

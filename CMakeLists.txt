@@ -5,11 +5,13 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
+#set(CMAKE_BUILD_TYPE Debug)
+
 project(parking_system VERSION 0.1.0)
 
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 cmake_policy(SET CMP0167 NEW)
-find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS system json)
 find_package(SQLite3 REQUIRED)
 
 option(BUILD_CLIENT "Build client application" ON)
@@ -63,11 +65,15 @@ if(BUILD_SERVER)
         server/src/main.cpp
         server/src/database/Database.cpp
         server/src/models/User.cpp
+        server/src/models/Parking.cpp
+        server/src/network/Server.cpp
     )
 
     set(SERVER_HEADERS
         server/src/database/Database.hpp
         server/src/models/User.hpp
+        server/src/models/Parking.hpp
+        server/src/network/Server.hpp
     )
 
     set(SERVER_DATABASE
@@ -76,5 +82,5 @@ if(BUILD_SERVER)
     add_executable(${PROJECT_NAME}_server ${SERVER_SOURCES} ${SERVER_HEADERS})
 
     include_directories(${SQLite3_INCLUDE_DIRS})
-    target_link_libraries(${PROJECT_NAME}_server Boost::system ${SQLite3_LIBRARIES}) 
+    target_link_libraries(${PROJECT_NAME}_server Boost::system Boost::json ${SQLite3_LIBRARIES}) 
 endif()

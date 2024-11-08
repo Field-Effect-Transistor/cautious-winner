@@ -2,6 +2,8 @@
 
 #include "../database/Database.hpp"
 
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/json_parser.hpp>
 #include <ctime>
 #include <list>
 
@@ -52,21 +54,27 @@ public:
         const std::string& lPlate
     ) { return addBooking(startTime, endTime, slot_id, user_id, lPlate, lastHandler); }
 
-    std::list<Parking> getParkings(int user_id, int& handler);
-    inline std::list<Parking> getParkings(int user_id) {
+    std::list<std::string> getParkings(int user_id, int& handler);
+    inline std::list<std::string> getParkings(int user_id) {
         return getParkings(user_id, lastHandler);
     }
 
-    std::list<Parking> getParkings(const std::string lPlate, int& handler);
-    inline std::list<Parking> getParkings(const std::string lPlate) {
+    std::list<std::string> getParkings(const std::string& lPlate, int& handler);
+    inline std::list<std::string> getParkings(const std::string& lPlate) {
         return getParkings(lPlate, lastHandler);
     }
 
     std::string toJson() const;
 
+    bool isParked(int slot_id, std::time_t startTime, int& handler);
+
     enum Handler {
+        EXEC_ERROR = -3,
+        PREPARE_ERROR = -2,
         ERROR = -1,
-        SUCCESS = 0
+        SUCCESS = 0,
+        SLOT_OCCUPIED = 1,
+        INVALID_TIME_PERIOD = 2
     };
 
 };

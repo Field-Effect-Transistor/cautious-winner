@@ -1,14 +1,15 @@
 #include <iostream>
 
 #include "database/Database.hpp"
-#include "models/User.hpp"
+#include "network/Server.hpp"
 
 int main(int argc, char** argv) { 
     Database db("server/database/db.sqlite");
+    boost::asio::io_context io_context;
 
-    User user(db);
-    user.createUser("genocide@isUnixBad.com", "12345678", "1234");
-    std::cout << user.getLastHandler() << std::endl;
+    Server server(3469, db, io_context);
+
+    io_context.run();
 
     return 0;
 }
