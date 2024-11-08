@@ -9,7 +9,7 @@ set(CMAKE_AUTOUIC ON)
 
 project(parking_system VERSION 0.1.0)
 
-find_package(Qt5 REQUIRED COMPONENTS Widgets)
+find_package(Qt5 REQUIRED COMPONENTS Widgets Network)
 cmake_policy(SET CMP0167 NEW)
 find_package(Boost REQUIRED COMPONENTS system json)
 find_package(SQLite3 REQUIRED)
@@ -33,6 +33,7 @@ if(BUILD_CLIENT)
         client/src/main/mainWindow.cpp
         client/src/main/parkWidget.cpp
         client/src/main/bookWidget.cpp
+        client/src/network/Client.cpp
     )
 
     set(CLIENT_HEADERS
@@ -48,6 +49,7 @@ if(BUILD_CLIENT)
         client/src/main/mainWindow.hpp
         client/src/main/parkWidget.hpp
         client/src/main/bookWidget.hpp
+        client/src/network/Client.hpp
     )
 
     set(CLIENT_RESOURCES
@@ -56,7 +58,7 @@ if(BUILD_CLIENT)
     )
 
     add_executable(${PROJECT_NAME}_client ${CLIENT_SOURCES} ${CLIENT_HEADERS} ${CLIENT_RESOURCES})
-    target_link_libraries(${PROJECT_NAME}_client Qt5::Widgets)
+    target_link_libraries(${PROJECT_NAME}_client Qt5::Widgets Qt5::Network)
 endif()
 
 #SERVER BUILD

@@ -1,0 +1,62 @@
+Server created on port 3469
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 58820
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 50188
+Client connected from IP: 127.0.0.1 Port: 42128
+Received request from IP: 127.0.0.1
+Request: { "command": "CLOSE_CONNECTION" }
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 52404
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTRATION","email":"firstRviaUI@hope.com","lPlate":"hihihoho","password":"12345678qQ!"}
+Client connected from IP: 127.0.0.1 Port: 46348
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"hihihihko","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: Client connected from IP: 127.0.0.1 Port: 53240
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"123213123","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"123213123","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"123213123","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: Client connected from IP: 127.0.0.1 Port: 52822
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"12312321","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"12312321","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"12312321","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"12312321","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"12312321","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"12312321","password":"12345678qQ!"}
+Client connected from IP: 127.0.0.1 Port: 47016
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"erwerweew","password":"123456789qQ!"}
+Client connected from IP: 127.0.0.1 Port: 40102
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"dadassadsa","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"evenNotThirdTryRegviaUI@hihi.com","lPlate":"dadassadsa","password":"12345678qQ!"}
+Client connected from IP: 127.0.0.1 Port: 44222
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTryRegviaUI@hihi.com","lPlate":"sdadsadasdsasad","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTrfdsyRegviaUI@hihi.com","lPlate":"sdadsadasdsasad","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"secondTrfdsyRegviaUI@hihi.com","lPlate":"sdadsadasdsasad","password":"12345678qQ!"}
+Client connected from IP: 127.0.0.1 Port: 48514
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1

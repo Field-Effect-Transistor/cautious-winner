@@ -46,7 +46,6 @@ void Server::startAccept() {
     });
 }
 
-
 // Зміни у функції handleClient
 void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) {
     try {
@@ -60,18 +59,36 @@ void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) 
             return; // Якщо не вдалося відправити, виходимо з обробки клієнта
         }
 
-        // Читання запиту від клієнта
-        std::array<char, 1024> buffer;
-        size_t len = socket->read_some(boost::asio::buffer(buffer), ec);
-        
-        if (!ec) {
-            std::string request(buffer.data(), len);
-            std::string response = processRequest(request);
+        bool keepConnection = true;
 
-            // Відправка відповіді на запит клієнта
-            boost::asio::write(*socket, boost::asio::buffer(response), ec);
-        } else {
-            std::cerr << "Error reading request: " << ec.message() << std::endl;
+        while (keepConnection) {
+            // Читання запиту від клієнта
+            std::array<char, 1024> buffer;
+            size_t len = socket->read_some(boost::asio::buffer(buffer), ec);
+            
+            if (!ec) {
+                std::string request(buffer.data(), len);
+                std::cout << "Received request from IP: " << socket->remote_endpoint().address().to_string() << std::endl;
+                std::cout << "Request: " << request << std::endl;
+                std::string response = processRequest(request, keepConnection);
+
+                // Відправка відповіді на запит клієнта
+                boost::asio::write(*socket, boost::asio::buffer(response), ec);
+                
+                if (ec) {
+                    std::cerr << "Error sending response: " << ec.message() << std::endl;
+                    break; // Виходимо з циклу, якщо не вдалося відправити
+                }
+
+                // Перевіряємо, чи потрібно закрити з'єднання
+                if (!keepConnection) {
+                    std::cout << "Closing connection with client from IP: " << socket->remote_endpoint().address().to_string() << std::endl;
+                    break;
+                }
+            } else {
+                std::cerr << "Error reading request: " << ec.message() << std::endl;
+                break; // Виходимо з циклу у разі помилки
+            }
         }
 
         // Закриття з'єднання з клієнтом
@@ -81,7 +98,7 @@ void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) 
     }
 }
 
-std::string Server::processRequest(const std::string& request) {
+std::string Server::processRequest(const std::string& request, bool& keepConnection) {
     try {
         boost::json::value jsonRequest = boost::json::parse(request);
         if (!jsonRequest.as_object().contains("command")) {
@@ -92,6 +109,10 @@ std::string Server::processRequest(const std::string& request) {
 
         if (command == "REGISTER_USER") {
             return registerUser(jsonRequest);
+        } else if (command == "CLOSE_CONNECTION") {
+            // Якщо команда "CLOSE_CONNECTION", змінюємо флаг для закриття з'єднання
+            keepConnection = false;
+            return "{\"status\":\"success\",\"message\":\"Connection will be closed.\"}";
         }
 
         return "{\"status\":\"error\",\"message\":\"Unknown command\"}";

@@ -1,6 +1,6 @@
 #include "startWidget.hpp"
 
-startWidget::startWidget(QWidget *parent) : QWidget(parent) {
+startWidget::startWidget(Client& client, QWidget *parent) : QWidget(parent), client(client) {
     layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
     alignLayout = new QBoxLayout(QBoxLayout::TopToBottom);
     
@@ -153,7 +153,24 @@ void startWidget::regSlot() {
         errorDialog dialog("Wrong license", this);
         dialog.exec();
     } else {
-        switchToLogin();
+
+        QString response = client.registrationRequest(
+            reg->emailIn->text(),
+            reg->passwdIn->text(),
+            reg->licenseIn->text()
+        );
+
+        std::cout << response.toStdString() << std::endl;
+
+        QJsonObject jsonResponse = QJsonDocument::fromJson(response.toUtf8()).object();
+        if (jsonResponse["status"].toString() == "success") {
+            switchToLogin();
+        } else if (jsonResponse["status"].toString() == "error") {
+            errorDialog dialog(jsonResponse["message"].toString(), this);
+            std::cout << jsonResponse["message"].toString().toStdString() << std::endl;
+            dialog.exec();
+        }
+
     }
 }
 

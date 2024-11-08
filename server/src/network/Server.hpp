@@ -26,6 +26,6 @@ private:
     void startAccept();
     void handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket);
 
-    std::string processRequest(const std::string& request);
+    std::string processRequest(const std::string& request, bool& keepConnection);
     std::string registerUser(const boost::json::value& jsonRequest);
 };
