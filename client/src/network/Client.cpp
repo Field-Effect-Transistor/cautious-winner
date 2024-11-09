@@ -82,3 +82,21 @@ QString Client::registrationRequest(
     QString request = QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact);
     return sendRequest(request);
 }
+
+QString Client::userLoginRequest(const QString& email, const QString& password) {
+    QJsonObject jsonRequest;
+    jsonRequest["command"] = "USER_LOGIN";
+    jsonRequest["email"] = email;
+    jsonRequest["password"] = password;
+
+    QString request = QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact);
+    return sendRequest(request);
+}
+
+QString Client::guestLoginRequest() {
+    QJsonObject jsonRequest;
+    jsonRequest["command"] = "GUEST_LOGIN";
+
+    QString request = QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact);
+    return sendRequest(request);
+}

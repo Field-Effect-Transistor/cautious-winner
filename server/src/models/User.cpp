@@ -120,8 +120,8 @@ User& User::createUser(std::string email_, std::string password_, std::string lP
     }
 }
 
-bool User::auth(std::string email_, std::string password_) {
-    findUser(email_);
+bool User::auth(std::string email_, std::string password_, int& handler) {
+    findUser(email_, handler);
     return password == password_ && email == email_;
 }
 

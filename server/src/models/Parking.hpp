@@ -1,15 +1,17 @@
 #pragma once
 
 #include "../database/Database.hpp"
+#include "Slot.hpp"
 
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/json_parser.hpp>
+#include <boost/json.hpp>
 #include <ctime>
 #include <list>
 
 class Parking {
     private:
         Database& db;
+
+        Slot* slot;
 
         int id;
         int type;
@@ -54,17 +56,19 @@ public:
         const std::string& lPlate
     ) { return addBooking(startTime, endTime, slot_id, user_id, lPlate, lastHandler); }
 
-    std::list<std::string> getParkings(int user_id, int& handler);
-    inline std::list<std::string> getParkings(int user_id) {
+    std::string getParkings(int user_id, int& handler);
+    inline std::string getParkings(int user_id) {
         return getParkings(user_id, lastHandler);
     }
 
-    std::list<std::string> getParkings(const std::string& lPlate, int& handler);
-    inline std::list<std::string> getParkings(const std::string& lPlate) {
+    std::string getParkings(const std::string& lPlate, int& handler);
+    inline std::string getParkings(const std::string& lPlate) {
         return getParkings(lPlate, lastHandler);
     }
 
     std::string toJson() const;
+
+    std::string getSlotParkings(int slot_id);
 
     bool isParked(int slot_id, std::time_t startTime, int& handler);
 

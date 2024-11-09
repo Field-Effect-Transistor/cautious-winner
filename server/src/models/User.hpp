@@ -33,7 +33,10 @@ public:
         return createUser(email_, password_, lPlate_, lastHandler);
     };
 
-    bool auth(std::string email_, std::string password_);
+    bool auth(std::string email_, std::string password_, int& handler);
+    inline bool auth(std::string email_, std::string password_) {
+        return auth(email_, password_, lastHandler);
+    }
     bool auth(std::string password_);
 
     int getLastHandler() const { return lastHandler; }

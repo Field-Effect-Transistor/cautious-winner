@@ -68,6 +68,7 @@ if(BUILD_SERVER)
         server/src/database/Database.cpp
         server/src/models/User.cpp
         server/src/models/Parking.cpp
+        server/src/models/Slot.cpp
         server/src/network/Server.cpp
     )
 
@@ -75,6 +76,7 @@ if(BUILD_SERVER)
         server/src/database/Database.hpp
         server/src/models/User.hpp
         server/src/models/Parking.hpp
+        server/src/models/Slot.hpp
         server/src/network/Server.hpp
     )
 

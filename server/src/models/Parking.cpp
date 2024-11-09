@@ -1,6 +1,6 @@
 #include "Parking.hpp"
 
-Parking::Parking(Database& db) : db(db) {}
+Parking::Parking(Database& db) : db(db), slot(new Slot(db)) {}
 
 Parking::~Parking() {}
 
@@ -53,6 +53,9 @@ Parking& Parking::addParking(
     }
 
     sqlite3_finalize(stmt);
+
+    slot->updateSlotStatus(slot_id);
+
     return *this;
 }
 
@@ -113,6 +116,9 @@ Parking& Parking::addBooking(
     }
 
     sqlite3_finalize(stmt);
+
+    slot->updateSlotStatus(slot_id);
+
     return *this;
 }
 
@@ -165,82 +171,144 @@ bool Parking::isParked(int slot_id, std::time_t startTime, int& handler) {
     handler = Handler::SUCCESS;
     return false; // Нічого не знайдено
 }
+std::string Parking::getParkings(int user_id, int& handler) {
 
-std::list<std::string> Parking::getParkings(int user_id, int& handler) {
-    std::list<std::string> jsonList;
+    slot->updateAllSlots();
+
+    using boost::json::object;
+    using boost::json::array;
+    using boost::json::value;
+
+    object jsonResponse;
+    array parkings;
 
     sqlite3_stmt* stmt;
     std::string query = "SELECT id, type, start_date, end_date, slot_id, user_id, lPlate FROM Parking WHERE user_id = ?";
     
     if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
         handler = Handler::PREPARE_ERROR;
-        return jsonList;
+        return "{}";  // Повертаємо порожній JSON у разі помилки
     }
 
     sqlite3_bind_int(stmt, 1, user_id);
 
     while (sqlite3_step(stmt) == SQLITE_ROW) {
-        Parking parking(db);
-        parking.id = sqlite3_column_int(stmt, 0);
-        parking.type = sqlite3_column_int(stmt, 1);
-        parking.start_date = sqlite3_column_int(stmt, 2);
-        parking.end_date = sqlite3_column_int(stmt, 3);
-        parking.slot_id = sqlite3_column_int(stmt, 4);
-        parking.user_id = sqlite3_column_int(stmt, 5);
-        parking.lPlate = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 6));
+        object parkingObj;
+        parkingObj["slot_id"] = value{std::to_string(sqlite3_column_int(stmt, 4))};
+        parkingObj["type"] = value{std::to_string(sqlite3_column_int(stmt, 1))};
+        parkingObj["start_date"] = value{std::to_string(sqlite3_column_int(stmt, 2))};
+        parkingObj["end_date"] = value{std::to_string(sqlite3_column_int(stmt, 3))};
 
-        jsonList.push_back(parking.toJson());
+        parkings.push_back(parkingObj);
     }
 
     sqlite3_finalize(stmt);
+
+    jsonResponse["parkings"] = parkings;
+
     handler = Handler::SUCCESS;
-    return jsonList;
+
+    // Перетворюємо об'єкт Boost.JSON в рядок JSON
+    return boost::json::serialize(jsonResponse);
 }
 
-std::list<std::string> Parking::getParkings(const std::string& lPlate, int& handler) {
-    std::list<std::string> jsonList;
+std::string Parking::getParkings(const std::string& lPlate, int& handler) {
+    slot->updateAllSlots();
+
+    using boost::json::object;
+    using boost::json::array;
+    using boost::json::value;
+
+    object jsonResponse;
+    array parkings;
 
     sqlite3_stmt* stmt;
     std::string query = "SELECT id, type, start_date, end_date, slot_id, user_id, lPlate FROM Parking WHERE lPlate = ?";
     
     if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
         handler = Handler::PREPARE_ERROR;
-        return jsonList;
+        return "{}";  // Повертаємо порожній JSON у разі помилки
     }
 
     sqlite3_bind_text(stmt, 1, lPlate.c_str(), -1, SQLITE_STATIC);
 
     while (sqlite3_step(stmt) == SQLITE_ROW) {
-        Parking parking(db);
-        parking.id = sqlite3_column_int(stmt, 0);
-        parking.type = sqlite3_column_int(stmt, 1);
-        parking.start_date = sqlite3_column_int(stmt, 2);
-        parking.end_date = sqlite3_column_int(stmt, 3);
-        parking.slot_id = sqlite3_column_int(stmt, 4);
-        parking.user_id = sqlite3_column_int(stmt, 5);
-        parking.lPlate = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 6));
+        object parkingObj;
+        parkingObj["slot_id"] = value{std::to_string(sqlite3_column_int(stmt, 4))};
+        parkingObj["type"] = value{std::to_string(sqlite3_column_int(stmt, 1))};
+        parkingObj["start_date"] = value{std::to_string(sqlite3_column_int(stmt, 2))};
+        parkingObj["end_date"] = value{std::to_string(sqlite3_column_int(stmt, 3))};
 
-        jsonList.push_back(parking.toJson());
+        parkings.push_back(parkingObj);
     }
 
     sqlite3_finalize(stmt);
+
+    jsonResponse["parkings"] = parkings;
+
     handler = Handler::SUCCESS;
-    return jsonList;
+
+    // Перетворюємо об'єкт Boost.JSON в рядок JSON
+    return boost::json::serialize(jsonResponse);
 }
 
-
 std::string Parking::toJson() const {
-    boost::property_tree::ptree pt;
+    using boost::json::object;
+    using boost::json::value;
 
-    pt.put("id", id);
-    pt.put("type", type);
-    pt.put("start_date", start_date);
-    pt.put("end_date", end_date);
-    pt.put("slot_id", slot_id);
-    pt.put("user_id", user_id);
-    pt.put("lPlate", lPlate);
+    // Створюємо об'єкт JSON
+    object parkingObj;
 
-    std::ostringstream oss;
-    boost::property_tree::write_json(oss, pt);
-    return oss.str();
+    // Додаємо поля до об'єкта JSON
+    parkingObj["id"] = value{id};
+    parkingObj["type"] = value{type};
+    parkingObj["start_date"] = value{start_date};
+    parkingObj["end_date"] = value{end_date};
+    parkingObj["slot_id"] = value{slot_id};
+    parkingObj["user_id"] = value{user_id};
+    parkingObj["lPlate"] = value{lPlate};
+
+    // Перетворюємо об'єкт JSON у рядок
+    return boost::json::serialize(parkingObj);
+}
+
+std::string Parking::getSlotParkings(int slot_id) {
+    slot->updateAllSlots();
+    
+    using boost::json::array;
+    using boost::json::object;
+    using boost::json::value;
+
+    // Створення масиву для паркувань
+    array parkingsArray;
+
+    sqlite3_stmt* stmt;
+    std::string query = "SELECT type, start_date, end_date FROM Parking WHERE slot_id = ?";
+
+    if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
+        // Повернення порожнього JSON у випадку помилки
+        return "{}";
+    }
+
+    sqlite3_bind_int(stmt, 1, slot_id);
+
+    // Перебір результатів запиту та додавання їх до масиву
+    while (sqlite3_step(stmt) == SQLITE_ROW) {
+        object parkingObj;
+
+        parkingObj["type"] = value{sqlite3_column_int(stmt, 0)};
+        parkingObj["start_date"] = value{sqlite3_column_int(stmt, 1)};
+        parkingObj["end_date"] = value{sqlite3_column_int(stmt, 2)};
+
+        parkingsArray.push_back(parkingObj);
+    }
+
+    sqlite3_finalize(stmt);
+
+    // Створення об'єкта JSON для повернення
+    object resultObj;
+    resultObj["parkings"] = parkingsArray;
+
+    // Перетворення об'єкта JSON в рядок
+    return boost::json::serialize(resultObj);
 }

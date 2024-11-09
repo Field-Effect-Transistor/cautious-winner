@@ -26,6 +26,13 @@ private:
     void startAccept();
     void handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket);
 
-    std::string processRequest(const std::string& request, bool& keepConnection);
+    std::string processRequest(const std::string& request, bool& keepConnection, bool& isLogined);
     std::string registerUser(const boost::json::value& jsonRequest);
+    std::string userLogIn(const boost::json::value& jsonRequest, bool& isLogined);
+    std::string guestLogIn(const boost::json::value& jsonRequest, bool& isLogined);
+    std::string parking(const boost::json::value& jsonRequest);
+    std::string booking(const boost::json::value& jsonRequest);
+    std::string getMap(const boost::json::value& jsonRequest);
+    std::string getParkingList(const boost::json::value& jsonRequest);
+    std::string setSlotInfo(const boost::json::value& jsonRequest);
 };

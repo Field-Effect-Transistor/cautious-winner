@@ -119,22 +119,39 @@ void startWidget::loginSlot() {
         dialog.exec();
 
     } else {
-        hide();
-        mainWindow* mainW = new mainWindow();
-        mainW->show();
+        QString response = client.userLoginRequest(login->emailIn->text(), login->passwdIn->text());
+        QJsonObject jsonResponse = QJsonDocument::fromJson(response.toUtf8()).object();
+        if (jsonResponse["status"].toString() == "success") {
+            hide();
+            mainWindow* mainW = new mainWindow();
+            mainW->show();
+        } else if (jsonResponse["status"].toString() == "error") {
+            errorDialog dialog(jsonResponse["message"].toString(), this);
+            dialog.exec();
+        } else {
+            errorDialog dialog("Something went wrong", this);
+            dialog.exec();
+        }
     }
 }
 
 void startWidget::guestSlot() {
-    if (false and validation::isEmailInvalid(guest->emailIn->text())) {
+    if (validation::isEmailInvalid(guest->emailIn->text())) {
         
         errorDialog dialog("Wrong email or password", this);
         dialog.exec();
 
     } else {
-        hide();
-        mainWindow* mainW = new mainWindow();
-        mainW->show();
+        QString response = client.guestLoginRequest();
+        QJsonObject jsonResponse = QJsonDocument::fromJson(response.toUtf8()).object();
+        if (jsonResponse["status"].toString() == "success") {
+            hide();
+            mainWindow* mainW = new mainWindow();
+            mainW->show();
+        } else {
+            errorDialog dialog("Something went wrong", this);
+            dialog.exec();
+        }
     }
 }
 
@@ -160,7 +177,7 @@ void startWidget::regSlot() {
             reg->licenseIn->text()
         );
 
-        std::cout << response.toStdString() << std::endl;
+        //std::cout << response.toStdString() << std::endl;
 
         QJsonObject jsonResponse = QJsonDocument::fromJson(response.toUtf8()).object();
         if (jsonResponse["status"].toString() == "success") {

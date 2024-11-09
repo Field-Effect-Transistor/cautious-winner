@@ -29,6 +29,8 @@ public:
         const QString& password,
         const QString& lPlate
     );
+    QString userLoginRequest(const QString& email, const QString& password);
+    QString guestLoginRequest();
 
 
 private slots:

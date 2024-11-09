@@ -18,7 +18,7 @@ entity "Auth" as auth {
 entity "Parking" as parking {
     * park_id   : INTEGER <<PK>>
     --
-    tupe        : INTEGER
+    type        : INTEGER
     start_date  : INTEGER
     end_date    : INTEGER
     slot_id     : INTEGER <<FK>>
@@ -26,6 +26,13 @@ entity "Parking" as parking {
     lPlate      : TEXT
 }
 
+entity "Slots" as slots {
+    * park_id   : IINTEGER <<PK>>
+    --
+    slot_id     : INTEGER 
+}
+
 users }o--o{ parking : "user_id"
 users ||--|| auth   : "user_id"
+slots o--o{ parking : "slot_id"
 @enduml

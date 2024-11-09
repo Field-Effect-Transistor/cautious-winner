@@ -60,6 +60,7 @@ void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) 
         }
 
         bool keepConnection = true;
+        bool isLogined = false;
 
         while (keepConnection) {
             // Читання запиту від клієнта
@@ -70,7 +71,7 @@ void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) 
                 std::string request(buffer.data(), len);
                 std::cout << "Received request from IP: " << socket->remote_endpoint().address().to_string() << std::endl;
                 std::cout << "Request: " << request << std::endl;
-                std::string response = processRequest(request, keepConnection);
+                std::string response = processRequest(request, keepConnection, isLogined);
 
                 // Відправка відповіді на запит клієнта
                 boost::asio::write(*socket, boost::asio::buffer(response), ec);
@@ -98,7 +99,7 @@ void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) 
     }
 }
 
-std::string Server::processRequest(const std::string& request, bool& keepConnection) {
+std::string Server::processRequest(const std::string& request, bool& keepConnection, bool& isLogined) {
     try {
         boost::json::value jsonRequest = boost::json::parse(request);
         if (!jsonRequest.as_object().contains("command")) {
@@ -113,6 +114,10 @@ std::string Server::processRequest(const std::string& request, bool& keepConnect
             // Якщо команда "CLOSE_CONNECTION", змінюємо флаг для закриття з'єднання
             keepConnection = false;
             return "{\"status\":\"success\",\"message\":\"Connection will be closed.\"}";
+        } else if (command == "USER_LOGIN") {
+            return userLogIn(jsonRequest, isLogined);
+        } else if (command == "GUEST_LOGIN") {
+            return guestLogIn(jsonRequest, isLogined);
         }
 
         return "{\"status\":\"error\",\"message\":\"Unknown command\"}";
@@ -140,3 +145,35 @@ std::string Server::registerUser(const boost::json::value& jsonRequest) {
         return "{\"status\":\"error\",\"message\":\"Failed to create user\"}";
     }
 }
+
+std::string Server::userLogIn(const boost::json::value& jsonRequest, bool& isLogined) {
+    User user(db);
+
+    std::string email = boost::json::value_to<std::string>(jsonRequest.as_object().at("email"));
+    std::string password = boost::json::value_to<std::string>(jsonRequest.as_object().at("password"));
+
+    isLogined = 0;
+    int handler;
+    bool temp = user.auth(email, password, handler);
+
+    if (handler == User::Handler::SUCCESS) {
+        isLogined = temp;
+        if (temp) {
+            return "{\"status\":\"success\"}";
+        } else {
+            return "{\"status\":\"error\",\"message\":\"Wrong password or email\"}";
+        }
+    } else if(handler == User::Handler::ERROR){
+        return "{\"status\":\"error\",\"message\":\"ServerPart error, please try again.\"}";
+    } else if(handler == User::Handler::USER_NOT_FOUND){
+        return "{\"status\":\"error\",\"message\":\"Wrong passwort or email\"}";
+    } else {
+        return "{\"status\":\"error\",\"message\":\"Failed to log in for unknown reason.\"}";
+    }
+}
+
+std::string Server::guestLogIn(const boost::json::value& jsonRequest, bool& isLogined) {
+    isLogined = 1;
+    return "{\"status\":\"success\"}";
+}
+
