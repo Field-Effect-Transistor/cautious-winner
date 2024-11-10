@@ -122,8 +122,10 @@ void startWidget::loginSlot() {
         QString response = client.userLoginRequest(login->emailIn->text(), login->passwdIn->text());
         QJsonObject jsonResponse = QJsonDocument::fromJson(response.toUtf8()).object();
         if (jsonResponse["status"].toString() == "success") {
+            client.user_id = jsonResponse["user_id"].toInt();
+            client.lPlate = jsonResponse["lPlate"].toString();
             hide();
-            mainWindow* mainW = new mainWindow();
+            mainWindow* mainW = new mainWindow(client);
             mainW->show();
         } else if (jsonResponse["status"].toString() == "error") {
             errorDialog dialog(jsonResponse["message"].toString(), this);
@@ -146,7 +148,9 @@ void startWidget::guestSlot() {
         QJsonObject jsonResponse = QJsonDocument::fromJson(response.toUtf8()).object();
         if (jsonResponse["status"].toString() == "success") {
             hide();
-            mainWindow* mainW = new mainWindow();
+            client.user_id = -1;
+            client.lPlate = guest->emailIn->text();
+            mainWindow* mainW = new mainWindow(client);
             mainW->show();
         } else {
             errorDialog dialog("Something went wrong", this);

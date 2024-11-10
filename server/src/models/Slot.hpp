@@ -4,6 +4,7 @@
 
 #include <ctime>
 #include <boost/json.hpp>
+#include <list>
 
 class Slot {
 private:
@@ -21,5 +22,11 @@ public:
     void updateSlotStatus(int slot_id);
     void updateAllSlots(void);
     
-    std::string getMap();
+    std::list<boost::json::object> getMap();
+
+    enum STATUS {
+        FREE = 0,
+        BUSY = 1,
+        BOOKED = 2
+    };
 };

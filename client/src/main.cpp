@@ -14,7 +14,6 @@ int main(int argc, char *argv[]) {
     startWidget w(client);
     w.show();
 
-
-
     return app.exec();
 }
+

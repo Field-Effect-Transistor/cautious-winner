@@ -6,7 +6,11 @@
 #include <QByteArray>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QJsonArray>
 #include <QEventLoop>
+#include <QThread>
+
+#include <iostream>
 
 class Client : public QObject {
     Q_OBJECT
@@ -17,6 +21,9 @@ private:
     QTcpSocket socket;
 
 public:
+    int user_id;
+    QString lPlate; 
+    
     Client(const QString& host_ip, unsigned short port, QObject* parent = nullptr);
     ~Client();
 
@@ -31,7 +38,15 @@ public:
     );
     QString userLoginRequest(const QString& email, const QString& password);
     QString guestLoginRequest();
-
+    QString getMap();
+    QJsonObject bigDataTransfering(const QJsonObject& request);
+    QJsonObject parkingRequest(int slot_id);
+    QJsonObject bookingRequest(
+        time_t startTime,
+        time_t endTime,
+        int slot_id
+    );
+    QJsonObject endParkingRequest(int slot_id);
 
 private slots:
     void onConnected();

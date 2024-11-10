@@ -48,119 +48,62 @@ void Slot::init() {
 }
 
 std::string Slot::defineSlotStatus(int slot_id) {
-    //int executedScenarios = 0;
     sqlite3_stmt* stmt;
-    time_t currentTime = time(nullptr); // Поточний час для порівнянь
+    int status = STATUS::FREE;
+    time_t currentTime = std::time(nullptr);
 
-    // Сценарій 1: Вибірка паркувань типу 0 з порожнім end_date
-    std::string query1 = "SELECT slot_id, type, start_date, end_date FROM Parking WHERE slot_id = ? AND type = 0 AND (end_date IS NULL OR end_date = 0)";
+    // Перший SQL-запит для перевірки зайнятого паркомісця
+    const char* sqlCheckBusy = R"(
+        SELECT COUNT(*) FROM Parking 
+        WHERE slot_id = ? 
+          AND ((type = 0 AND end_date IS NULL) 
+               OR (type = 1 AND start_date <= ? AND ? <= end_date))
+    )";
 
-    if (sqlite3_prepare_v2(db.getDB(), query1.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
-        std::cerr << "Error in preparing statement 1: " << sqlite3_errmsg(db.getDB()) << std::endl;
-        return "ERROR1";
-    }
+    if (sqlite3_prepare_v2(db.getDB(), sqlCheckBusy, -1, &stmt, nullptr) == SQLITE_OK) {
+        sqlite3_bind_int(stmt, 1, slot_id);
+        sqlite3_bind_int64(stmt, 2, currentTime);
+        sqlite3_bind_int64(stmt, 3, currentTime);
 
-    sqlite3_bind_int(stmt, 1, slot_id);
-
-    // Перевірка паркувань з типом 0 і порожнім end_date (сценарій 1)
-    while (sqlite3_step(stmt) == SQLITE_ROW) {
-        // Всі ці паркування підпадають під сценарій 1
-        // Оновлення їх поля end_date або інших даних можна тут виконати
-        // Наприклад, оновлення кінцевої дати для паркування типу 0:
-        int parkingId = sqlite3_column_int(stmt, 0);
-
-        std::string updateQuery1 = "UPDATE Parking SET end_date = ? WHERE id = ?";
-        sqlite3_stmt* updateStmt1;
-        if (sqlite3_prepare_v2(db.getDB(), updateQuery1.c_str(), -1, &updateStmt1, nullptr) == SQLITE_OK) {
-            sqlite3_bind_int(updateStmt1, 1, static_cast<int>(currentTime));
-            sqlite3_bind_int(updateStmt1, 2, parkingId);
-
-            if (sqlite3_step(updateStmt1) == SQLITE_DONE) {
-                
-                return "BUSY"; // Сценарій 1 виконано
-            }
-
-            sqlite3_finalize(updateStmt1);
+        if (sqlite3_step(stmt) == SQLITE_ROW && sqlite3_column_int(stmt, 0) > 0) {
+            status = STATUS::BUSY;
         }
+        sqlite3_finalize(stmt);
+    } else {
+        std::cerr << "Error preparing SQL statement (BUSY check): " << sqlite3_errmsg(db.getDB()) << std::endl;
     }
 
-    sqlite3_finalize(stmt);
+    // Якщо перший запит підтвердив "BUSY", повертаємо статус і виходимо
+    if (status == STATUS::BUSY) return "BUSY";
 
-    // Сценарій 2: Вибірка паркувань типу 1, де дата кінця пізніша за поточну
-    std::string query2 = "SELECT slot_id, type, start_date, end_date FROM Parking WHERE slot_id = ? AND type = 1 AND end_date > ?";
+    // Другий SQL-запит для перевірки заброньованого паркомісця
+    const char* sqlCheckBooked = R"(
+        SELECT COUNT(*) FROM Parking 
+        WHERE slot_id = ? 
+          AND type = 1 
+          AND end_date >= ? 
+          AND start_date >= ?
+    )";
 
-    if (sqlite3_prepare_v2(db.getDB(), query2.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
-        return "ERROR2"; // Повернення без змін у випадку помилки
-    }
+    if (sqlite3_prepare_v2(db.getDB(), sqlCheckBooked, -1, &stmt, nullptr) == SQLITE_OK) {
+        sqlite3_bind_int(stmt, 1, slot_id);
+        sqlite3_bind_int64(stmt, 2, currentTime);
+        sqlite3_bind_int64(stmt, 3, currentTime);
 
-    sqlite3_bind_int(stmt, 1, slot_id);
-    sqlite3_bind_int64(stmt, 2, static_cast<long long>(currentTime));
-
-    // Перевірка паркувань типу 1 з end_date пізніше поточного часу (сценарій 2)
-    while (sqlite3_step(stmt) == SQLITE_ROW) {
-        // Це паркування підпадає під сценарій 2
-        // Оновлення їх поля start_date, end_date або інших даних можна тут виконати
-        int parkingId = sqlite3_column_int(stmt, 0);
-        int startDate = sqlite3_column_int(stmt, 2);
-
-        // Якщо start_date менше за поточний час, виконуємо оновлення
-        if (startDate < currentTime) {
-            std::string updateQuery2 = "UPDATE Parking SET end_date = ? WHERE id = ?";
-            sqlite3_stmt* updateStmt2;
-            if (sqlite3_prepare_v2(db.getDB(), updateQuery2.c_str(), -1, &updateStmt2, nullptr) == SQLITE_OK) {
-                sqlite3_bind_int(updateStmt2, 1, static_cast<int>(currentTime));
-                sqlite3_bind_int(updateStmt2, 2, parkingId);
-
-                if (sqlite3_step(updateStmt2) == SQLITE_DONE) {
-                    return "BUSY"; // Сценарій 2 виконано
-                }
-
-                sqlite3_finalize(updateStmt2);
-            }
+        if (sqlite3_step(stmt) == SQLITE_ROW && sqlite3_column_int(stmt, 0) > 0) {
+            status = STATUS::BOOKED;
         }
+        sqlite3_finalize(stmt);
+    } else {
+        std::cerr << "Error preparing SQL statement (BOOKED check): " << sqlite3_errmsg(db.getDB()) << std::endl;
     }
 
-    sqlite3_finalize(stmt);
+    if (status == STATUS::BOOKED) return "BOOKED";
 
-    // Сценарій 3: Вибірка паркувань типу 1, де дата початку менша за поточну
-    std::string query3 = "SELECT slot_id, type, start_date FROM Parking WHERE slot_id = ? AND type = 1 AND start_date < ?";
-
-    if (sqlite3_prepare_v2(db.getDB(), query3.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
-        return "ERROR3"; // Повернення без змін у випадку помилки
-    }
-
-    sqlite3_bind_int(stmt, 1, slot_id);
-    sqlite3_bind_int64(stmt, 2, static_cast<long long>(currentTime));
-
-    // Перевірка паркувань типу 1, де start_date менше поточного часу (сценарій 3)
-    while (sqlite3_step(stmt) == SQLITE_ROW) {
-        // Це паркування підпадає під сценарій 3
-        // Оновлення їх даних можна тут виконати, якщо потрібно
-        int parkingId = sqlite3_column_int(stmt, 0);
-        int startDate = sqlite3_column_int(stmt, 2);
-
-        // Якщо дата початку менша за поточний час, можна виконати певну дію
-        if (startDate < currentTime) {
-            std::string updateQuery3 = "UPDATE Parking SET start_date = ? WHERE id = ?";
-            sqlite3_stmt* updateStmt3;
-            if (sqlite3_prepare_v2(db.getDB(), updateQuery3.c_str(), -1, &updateStmt3, nullptr) == SQLITE_OK) {
-                sqlite3_bind_int(updateStmt3, 1, static_cast<int>(currentTime));
-                sqlite3_bind_int(updateStmt3, 2, parkingId);
-
-                if (sqlite3_step(updateStmt3) == SQLITE_DONE) {
-                    return "BOOKED"; // Сценарій 3 виконано
-                }
-
-                sqlite3_finalize(updateStmt3);
-            }
-        }
-    }
-
-    sqlite3_finalize(stmt);
-
-    // Повертаємо кількість виконаних сценаріїв
+    // Якщо жоден з попередніх запитів не підтвердив статус "BUSY" або "BOOKED", повертаємо "FREE"
     return "FREE";
 }
+
 
 void Slot::updateSlotStatus(int slot_id) {
     try {
@@ -195,15 +138,15 @@ void Slot::updateAllSlots() {
     }
 }
 
-std::string Slot::getMap() {
+std::list<boost::json::object> Slot::getMap() {
     updateAllSlots();
 
     sqlite3_stmt* stmt;
     std::string query = "SELECT slot_id, status FROM Slots"; // Запит до таблиці Slots для отримання slot_id та status
-    boost::json::array slotArray; // Масив для зберігання слотів у форматі JSON
+    std::list<boost::json::object> slotList;
 
     if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
-        return "{}"; // Якщо виникла помилка при підготовці запиту, повертаємо порожній JSON
+        return std::list<boost::json::object>(); // Якщо виникла помилка при підготовці запиту, повертаємо порожній JSON
     }
 
     while (sqlite3_step(stmt) == SQLITE_ROW) {
@@ -217,12 +160,10 @@ std::string Slot::getMap() {
         slotObject["status"] = status;
 
         // Додаємо об'єкт до масиву
-        slotArray.push_back(std::move(slotObject));
+        slotList.push_back(std::move(slotObject));
     }
 
     sqlite3_finalize(stmt);
 
-    // Повертаємо всю інформацію у вигляді JSON рядка
-    boost::json::array responseArray = std::move(slotArray);
-    return boost::json::serialize(responseArray);
+    return slotList;
 }

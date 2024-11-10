@@ -18,12 +18,17 @@ protected:
     QLabel* idLabel;
     QLabel* status;
 
-    QPushButton* parkBtn;
+
 
 
 public:
+    QPushButton* parkBtn;
+    QPushButton* endParkBtn;
+    
     parkWidget(QWidget* parent = nullptr);
     ~parkWidget();
     
+    int getCurrPSlotID(void) const { return currPSlotID; }
+
     void setCurrPSlotID(int ID, const QString& status = "");
 };

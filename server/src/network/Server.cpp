@@ -61,6 +61,7 @@ void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) 
 
         bool keepConnection = true;
         bool isLogined = false;
+        std::list<boost::json::object> bigData;
 
         while (keepConnection) {
             // Читання запиту від клієнта
@@ -71,7 +72,7 @@ void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) 
                 std::string request(buffer.data(), len);
                 std::cout << "Received request from IP: " << socket->remote_endpoint().address().to_string() << std::endl;
                 std::cout << "Request: " << request << std::endl;
-                std::string response = processRequest(request, keepConnection, isLogined);
+                std::string response = processRequest(request, keepConnection, isLogined, bigData);
 
                 // Відправка відповіді на запит клієнта
                 boost::asio::write(*socket, boost::asio::buffer(response), ec);
@@ -99,7 +100,12 @@ void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) 
     }
 }
 
-std::string Server::processRequest(const std::string& request, bool& keepConnection, bool& isLogined) {
+std::string Server::processRequest(
+    const std::string& request,
+    bool& keepConnection,
+    bool& isLogined,
+    std::list<boost::json::object>& bigData
+) {
     try {
         boost::json::value jsonRequest = boost::json::parse(request);
         if (!jsonRequest.as_object().contains("command")) {
@@ -117,7 +123,17 @@ std::string Server::processRequest(const std::string& request, bool& keepConnect
         } else if (command == "USER_LOGIN") {
             return userLogIn(jsonRequest, isLogined);
         } else if (command == "GUEST_LOGIN") {
-            return guestLogIn(jsonRequest, isLogined);
+            return guestLogIn(isLogined);
+        } else if (command == "GET_MAP") {
+            return getMap(bigData);
+        } else if (command == "BIG_DATA_TRANSFER"){
+            return bigDataTransfer(bigData);
+        } else if (command == "PARKING") {
+            return parking(jsonRequest, isLogined);
+        } else if (command == "BOOKING") {
+            return booking(jsonRequest, isLogined);
+        } else if ( command == "END_PARKING") {
+            return endParking(jsonRequest, isLogined);
         }
 
         return "{\"status\":\"error\",\"message\":\"Unknown command\"}";
@@ -159,7 +175,11 @@ std::string Server::userLogIn(const boost::json::value& jsonRequest, bool& isLog
     if (handler == User::Handler::SUCCESS) {
         isLogined = temp;
         if (temp) {
-            return "{\"status\":\"success\"}";
+            boost::json::object toClient;
+            toClient["status"] = "success";
+            toClient["user_id"] = user.getId();
+            toClient["lPlate"] = user.getLPlate();
+            return boost::json::serialize(toClient);
         } else {
             return "{\"status\":\"error\",\"message\":\"Wrong password or email\"}";
         }
@@ -172,8 +192,107 @@ std::string Server::userLogIn(const boost::json::value& jsonRequest, bool& isLog
     }
 }
 
-std::string Server::guestLogIn(const boost::json::value& jsonRequest, bool& isLogined) {
+std::string Server::guestLogIn(bool& isLogined) {
     isLogined = 1;
     return "{\"status\":\"success\"}";
 }
 
+std::string Server::getMap(std::list<boost::json::object>& bigData) {
+    Slot slot(db);  
+    bigData =  slot.getMap();
+
+    return "{\"status\":\"startBigDataTransfering\",\"command\":\"GET_MAP\"}";
+}
+
+std::string Server::bigDataTransfer(std::list<boost::json::object>& bigData) {
+    boost::json::object toClient;
+    boost::json::array data;
+    
+    int counter = 0;
+    while ((!bigData.empty()) and counter < 8) {
+        data.push_back(bigData.front());
+        ++counter;
+        bigData.pop_front();
+    }
+
+    if(bigData.empty()) {
+        toClient["status"] = "endBigDataTransfering";
+    } else {
+        toClient["status"] = "bigDataTransfering";
+    }
+    toClient["data"] = data;
+
+
+    return boost::json::serialize(toClient);
+}
+
+std::string Server::parking(const boost::json::value& jsonRequest, const bool& isLogined) {
+    if (isLogined) {
+        Parking parking(db);
+        int handler;
+        int slot_id = boost::json::value_to<int>(jsonRequest.as_object().at("slot_id"));
+        int user_id = boost::json::value_to<int>(jsonRequest.as_object().at("user_id"));
+        std::string lPlate = boost::json::value_to<std::string>(jsonRequest.as_object().at("lPlate"));
+        parking.addParking(slot_id, user_id, lPlate, handler);
+
+        switch (handler) {
+            case Parking::Handler::SUCCESS:
+                return "{\"status\":\"success\"}";
+            case Parking::Handler::SLOT_OCCUPIED:
+                return "{\"status\":\"error\",\"message\":\"Slot is occupied\"}"; 
+        }
+        return "{\"status\":\"error\",\"message\":\"Failed to add parking via server part\"}";
+    } else {
+        return "{\"status\":\"error\",\"message\":\"You are not logged in\"}";
+    }
+}
+
+std::string Server::booking(const boost::json::value& jsonRequest, const bool& isLogined) {
+    if (isLogined) {
+        Parking parking(db);
+        int handler;
+        std::time_t startTime = boost::json::value_to<std::time_t>(jsonRequest.as_object().at("startTime"));
+        std::time_t endTime = boost::json::value_to<std::time_t>(jsonRequest.as_object().at("endTime"));
+        int slot_id = boost::json::value_to<int>(jsonRequest.as_object().at("slot_id"));
+        int user_id = boost::json::value_to<int>(jsonRequest.as_object().at("user_id"));
+        std::string lPlate = boost::json::value_to<std::string>(jsonRequest.as_object().at("lPlate"));
+        parking.addBooking(startTime, endTime, slot_id, user_id, lPlate, handler);
+        switch (handler) {
+            case Parking::Handler::SUCCESS:
+                return "{\"status\":\"success\"}";
+            case Parking::Handler::SLOT_OCCUPIED:
+                return "{\"status\":\"error\",\"message\":\"Slot is occupied\"}"; 
+            case Parking::Handler::INVALID_TIME_PERIOD:
+                return "{\"status\":\"error\",\"message\":\"Invalid time period\"}";
+        }
+
+        return "{\"status\":\"error\",\"message\":\"Failed to add booking via server part\"}";
+
+    } else {
+        return "{\"status\":\"error\",\"message\":\"You are not logged in\"}";
+    }
+}
+
+std::string Server::endParking(const boost::json::value& jsonRequest, const bool& isLogined) {
+    std::cout << "END PARKING" << std::endl;
+    if (isLogined) {
+        Parking parking(db);
+        int handler;
+
+        int slot_id = boost::json::value_to<int>(jsonRequest.as_object().at("slot_id"));
+        int user_id = boost::json::value_to<int>(jsonRequest.as_object().at("user_id"));
+
+        parking.endParking(slot_id, user_id, handler);
+
+        switch (handler) {
+            case Parking::Handler::SUCCESS:
+                return "{\"status\":\"success\"}";
+            case Parking::Handler::SLOT_NOT_OCCUPIED:
+                return "{\"status\":\"error\",\"message\":\"Slot is not occupied\"}"; 
+        }
+        return "{\"status\":\"error\",\"message\":\"Failed to end parking via server part\"}";
+
+    } else {
+        return "{\"status\":\"error\",\"message\":\"You are not logged in\"}";
+    }
+}

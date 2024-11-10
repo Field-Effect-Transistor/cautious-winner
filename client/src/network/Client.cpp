@@ -35,6 +35,7 @@ QString Client::sendRequest(const QString& jsonRequest) {
     socket.write(requestData);
     socket.flush();
 
+    // Блокування тільки на короткий час, для отримання відповіді.
     QEventLoop loop;
     QString response;
 
@@ -47,7 +48,6 @@ QString Client::sendRequest(const QString& jsonRequest) {
 
     return response;
 }
-
 
 void Client::onConnected() {
     qDebug() << "Successfully connected to server.";
@@ -100,3 +100,57 @@ QString Client::guestLoginRequest() {
     QString request = QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact);
     return sendRequest(request);
 }
+
+QString Client::getMap() {
+    QJsonObject jsonRequest;
+    jsonRequest["command"] = "GET_MAP";
+
+    return sendRequest(QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact));
+}
+
+QJsonObject Client::bigDataTransfering(const QJsonObject& request) {
+    QJsonObject response;
+    QJsonArray bigData;
+    
+    if (request["status"].toString() == "startBigDataTransfering") {
+        if (request["command"].toString() == "GET_MAP") {
+            do {
+                response = QJsonDocument::fromJson(
+                    sendRequest("{\"command\":\"BIG_DATA_TRANSFER\"}").toUtf8()
+                ).object();
+
+                for (const QJsonValue& value : response["data"].toArray()) {
+                    bigData.append(value);
+                }
+
+            } while (response["status"].toString() != "endBigDataTransfering");
+        }
+    }
+    
+    response["status"] = "success";
+    response["data"] = bigData;
+    return response;
+}
+
+QJsonObject Client::parkingRequest(int slot_id) {
+    QJsonObject jsonRequest;
+    jsonRequest["command"] = "PARKING";
+    jsonRequest["slot_id"] = slot_id;
+    jsonRequest["user_id"] = user_id;
+    jsonRequest["lPlate"] = lPlate;
+
+    return QJsonDocument::fromJson(
+        sendRequest(QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact)).toUtf8()
+    ).object();
+}
+
+QJsonObject Client::endParkingRequest(int slot_id) {
+    QJsonObject jsonRequest;
+    jsonRequest["command"] = "END_PARKING";
+    jsonRequest["slot_id"] = slot_id;
+    jsonRequest["user_id"] = user_id;
+
+    return QJsonDocument::fromJson(
+        sendRequest(QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact)).toUtf8()
+    ).object();
+}   

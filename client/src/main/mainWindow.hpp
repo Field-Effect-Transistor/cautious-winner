@@ -13,10 +13,14 @@
 #include "mapWidget.hpp"
 #include "parkWidget.hpp"
 #include "bookWidget.hpp"
+#include "../network/Client.hpp"
+#include "../auth/errorDialog.hpp"
 
 class mainWindow : public QWidget {
     Q_OBJECT
 protected:
+    Client& client;
+
     QBoxLayout* layout;
     QBoxLayout* alignLayout;
     QBoxLayout* leftLayout;
@@ -47,6 +51,11 @@ protected:
     QPushButton* exitBtn;
 
 public:
-    explicit mainWindow(QWidget *parent = nullptr);
+    explicit mainWindow(Client& client, QWidget *parent = nullptr);
     ~mainWindow();
+public slots:
+    void updateMap(void);
+    void parkSlot(void);
+    void endParkSlot(void);
+    void bookSlot(void);
 };

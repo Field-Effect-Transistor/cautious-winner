@@ -28,12 +28,12 @@ public:
     User& findUser(std::string email, int& handler);
     inline  User& findUser(std::string email) { return findUser(email, lastHandler); }
 
-    User& createUser(std::string email_, std::string password_, std::string lPlate_, int& handler);
-    inline User& createUser(std::string email_, std::string password_, std::string lPlate_) {
+    User& createUser(const std::string email_, const std::string password_, const std::string lPlate_, int& handler);
+    inline User& createUser(const std::string email_, const std::string password_, const std::string lPlate_) {
         return createUser(email_, password_, lPlate_, lastHandler);
     };
 
-    bool auth(std::string email_, std::string password_, int& handler);
+    bool auth(const std::string email_, const std::string password_, int& handler);
     inline bool auth(std::string email_, std::string password_) {
         return auth(email_, password_, lastHandler);
     }
@@ -49,4 +49,7 @@ public:
         USER_NOT_FOUND = 1,
         NOT_UNIQUE_USER = 2
     };
+
+    int getId() const { return id; }
+    std::string getLPlate() const { return lPlate; }
 };

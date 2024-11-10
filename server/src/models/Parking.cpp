@@ -312,3 +312,74 @@ std::string Parking::getSlotParkings(int slot_id) {
     // Перетворення об'єкта JSON в рядок
     return boost::json::serialize(resultObj);
 }
+
+Parking& Parking::endParking(
+    int slot_id,
+    int user_id,
+    const std::string& lPlate,
+    int& handler
+) {
+    sqlite3_stmt* stmt;
+    handler = SUCCESS;
+
+    int park_id = -1;
+
+    // Визначення SQL-запиту для перевірки статусу паркування за user_id або lPlate
+    const char* selectQuery;
+    if (user_id == -1) {
+        // Підготовка запиту для пошуку за slot_id і lPlate, якщо user_id == -1
+        selectQuery = "SELECT park_id FROM Parking WHERE type == 0 AND slot_id == ? AND user_id == -1 AND end_date IS NULL AND lPlate == ?;";
+    } else {
+        // Підготовка запиту для пошуку за slot_id і user_id
+        selectQuery = "SELECT park_id FROM Parking WHERE type == 0 AND slot_id == ? AND user_id == ? AND end_date IS NULL;";
+    }
+
+    // Підготовка запиту
+    if (sqlite3_prepare_v2(db.getDB(), selectQuery, -1, &stmt, nullptr) != SQLITE_OK) {
+        handler = PREPARE_ERROR;
+        return *this;
+    }
+
+    // Прив'язка параметрів до запиту
+    sqlite3_bind_int(stmt, 1, slot_id);
+    if (user_id == -1) {
+        sqlite3_bind_text(stmt, 2, lPlate.c_str(), -1, SQLITE_STATIC);
+    } else {
+        sqlite3_bind_int(stmt, 2, user_id);
+    }
+
+    // Виконання запиту та отримання park_id
+    if (sqlite3_step(stmt) == SQLITE_ROW) {
+        park_id = sqlite3_column_int(stmt, 0);
+    } else {
+        handler = Handler::SLOT_NOT_OCCUPIED; // Немає активного паркування для даного слоту і користувача
+        sqlite3_finalize(stmt);
+        return *this;
+    }
+    sqlite3_finalize(stmt);
+
+    // Отримання поточного часу в форматі Unix
+    std::time_t currentTime = std::time(nullptr);
+
+    // Підготовка другого запиту для оновлення поля end_date
+    const char* updateQuery = "UPDATE Parking SET end_date = ? WHERE park_id = ?;";
+    if (sqlite3_prepare_v2(db.getDB(), updateQuery, -1, &stmt, nullptr) != SQLITE_OK) {
+        handler = PREPARE_ERROR;
+        return *this;
+    }
+
+    // Прив'язка параметрів до запиту
+    sqlite3_bind_int(stmt, 1, static_cast<int>(currentTime));
+    sqlite3_bind_int(stmt, 2, park_id);
+
+    // Виконання запиту на оновлення
+    if (sqlite3_step(stmt) != SQLITE_DONE) {
+        handler = EXEC_ERROR;
+        sqlite3_finalize(stmt);
+        return *this;
+    }
+
+    sqlite3_finalize(stmt);
+    handler = SUCCESS;
+    return *this;
+}

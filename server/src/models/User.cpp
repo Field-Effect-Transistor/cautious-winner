@@ -66,7 +66,7 @@ User& User::findUser(std::string email_, int& handler) {
     return *this;
 }
 
-User& User::createUser(std::string email_, std::string password_, std::string lPlate_, int& handler) {
+User& User::createUser(const std::string email_, const std::string password_, const std::string lPlate_, int& handler) {
     std::string query = "INSERT INTO Users (email, password, lPlate) VALUES (?, ?, ?)";
     sqlite3_stmt* stmt;
 
@@ -88,15 +88,20 @@ User& User::createUser(std::string email_, std::string password_, std::string lP
     if (sqlite3_step(stmt) == SQLITE_DONE) {
         sqlite3_finalize(stmt);
         if (findUser(email_).lastHandler == Handler::SUCCESS) {
-            query = "INSERT INTO Auth (user_id, lastAuth, created_at) VALUES (?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
+            // Отримуємо поточний Unix timestamp
+            int currentTime = static_cast<int>(time(0));
 
+            query = "INSERT INTO Auth (user_id, lastAuth, created_at) VALUES (?, ?, ?)";
             sqlite3_stmt* stmt2;
             if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt2, nullptr) != SQLITE_OK) {
                 handler = Handler::ERROR;
                 return *this;
             }
 
+            // Прив'язка параметрів для `user_id`, `lastAuth`, і `created_at`
             sqlite3_bind_int(stmt2, 1, id);
+            sqlite3_bind_int(stmt2, 2, currentTime);  // lastAuth
+            sqlite3_bind_int(stmt2, 3, currentTime);  // created_at
 
             if (sqlite3_step(stmt2) == SQLITE_DONE) {
                 handler = Handler::SUCCESS;
@@ -106,10 +111,9 @@ User& User::createUser(std::string email_, std::string password_, std::string lP
                 sqlite3_finalize(stmt2);
             }
         }
-
         return *this;
     } else if (std::string(sqlite3_errmsg(db.getDB()))
-        .find("UNIQUE constraint failed: Users.email") != std::string::npos) {
+               .find("UNIQUE constraint failed: Users.email") != std::string::npos) {
         handler = Handler::NOT_UNIQUE_USER;
         sqlite3_finalize(stmt);
         return *this;
@@ -120,9 +124,43 @@ User& User::createUser(std::string email_, std::string password_, std::string lP
     }
 }
 
-bool User::auth(std::string email_, std::string password_, int& handler) {
+bool User::auth(const std::string email_, const std::string password_, int& handler) {
     findUser(email_, handler);
-    return password == password_ && email == email_;
+
+    // Перевіряємо, чи дані аутентифікації співпадають
+    if (email == email_ && password == password_) {
+        // Отримуємо поточний час як Unix timestamp
+        int currentTime = static_cast<int>(time(0));
+
+        // Підготовка SQL-запиту для оновлення `lastAuth`
+        std::string query = "UPDATE Auth SET lastAuth = ? WHERE user_id = ?";
+
+        sqlite3_stmt* stmt;
+        if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) == SQLITE_OK) {
+            // Прив’язуємо значення поточного часу до першого параметра
+            sqlite3_bind_int(stmt, 1, currentTime);
+            // Прив’язуємо значення user_id до другого параметра
+            sqlite3_bind_int(stmt, 2, id);
+
+            // Виконуємо запит
+            if (sqlite3_step(stmt) != SQLITE_DONE) {
+                // Якщо виникла помилка
+                sqlite3_finalize(stmt);
+                handler = -1;  // Наприклад, -1 позначає помилку
+                return false;
+            }
+
+            sqlite3_finalize(stmt);
+        } else {
+            handler = -1;  // Помилка підготовки запиту
+            return false;
+        }
+
+        return true;  // Успішна аутентифікація і оновлення `lastAuth`
+    }
+
+    handler = -1;  // Невдалий вхід
+    return false;
 }
 
 bool User::auth(std::string password_) {

@@ -83,3 +83,2107 @@ Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"123456
 Received request from IP: 127.0.0.1
 Request: {"command":"CLOSE_CONNECTION"}
 Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 60716
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 44436
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 55388
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Client connected from IP: 127.0.0.1 Port: 33756
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Client connected from IP: 127.0.0.1 Port: 40746
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 49050
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Client connected from IP: 127.0.0.1 Port: 45300
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 36608
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+
+Received request from IP: 127.0.0.1
+Request: ÿôÿý
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 37134
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 44524
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 59364
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Client connected from IP: 127.0.0.1 Port: 60568
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 40838
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 54374
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Client connected from IP: 127.0.0.1 Port: 47090
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 42908
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 47926
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@Gmail.com","lPlate":"123456","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 58124
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@gmail.com","lPlate":"12345663","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 50572
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 59826
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 33596
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 34960
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 55486
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 35044
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 57110
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 47222
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 38776
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 58670
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 60956
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 50046
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 46994
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 49812
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 44096
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 44980
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 48444
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 42718
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 40724
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 47318
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 51140
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 53728
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 36896
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 48828
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 33004
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 47574
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 37574
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 50758
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 60254
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vincente@gmail.com","lPlate":"12312312","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 52644
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 55136
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 38698
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":0,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":0,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":2,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 53082
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":1,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":2,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":1,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":3,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":3,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":2,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 51828
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":39,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":39,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":39,"user_id":3}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 39996
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":34,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":34,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 44042
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 42602
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":28,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 54008
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":3,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":20,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":18,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 36336
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"vova@nword.com","lPlate":"fsdfdsfdsfsdfds","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vova@nword.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"fsdfdsfdsfsdfds","slot_id":10,"user_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 45702
+Received request from IP: 127.0.0.1
+Request: {"command":"REGISTER_USER","email":"test@mail.com","lPlate":"fsdsdfsdf","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"test@mail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"fsdsdfsdf","slot_id":38,"user_id":5}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 58334
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 34134
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 53870
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 40960
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":0,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":1,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 32962
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 50346
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 57068
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":0,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":0,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":0,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":5,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":5,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":5,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":5,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":5,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":5,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":5,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":5,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":5,"user_id":3}
+Client connected from IP: 127.0.0.1 Port: 53114
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":0,"user_id":3}
+Client connected from IP: 127.0.0.1 Port: 44050
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 45574
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":4,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"END_PARKING","slot_id":4,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"END_PARKING","slot_id":5,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"END_PARKING","slot_id":1,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"END_PARKING","slot_id":0,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}

@@ -16,5 +16,10 @@ int main(int argc, char** argv) {
 
     io_context.run();
 
+    Parking parking(db);
+    int handler;
+
+    //parking.endParking()
+
     return 0;
 }

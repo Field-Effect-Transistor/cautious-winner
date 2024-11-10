@@ -1,7 +1,7 @@
 #include "mainWindow.hpp"
 #include <iostream>
 
-mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
+mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), client(client) {
     layout = new QBoxLayout(QBoxLayout::LeftToRight, this);
     alignLayout = new QBoxLayout(QBoxLayout::LeftToRight);
     leftLayout = new QBoxLayout(QBoxLayout::TopToBottom);
@@ -47,9 +47,11 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
     connect(parkBtn, &QPushButton::clicked, this, [&](){
         actionsWidget->setCurrentIndex(0);
     });
+    connect(parkBtn, &QPushButton::clicked, this, &mainWindow::updateMap);
     connect(bookBtn, &QPushButton::clicked, this, [&](){
         actionsWidget->setCurrentIndex(1);
     });
+    connect(bookBtn, &QPushButton::clicked, this, &mainWindow::updateMap);
 
     leftLayout->addWidget(menuGB);
     leftLayout->addWidget(actionsGB);
@@ -63,50 +65,54 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
 
     alignLayout->setAlignment(leftLayout, Qt::AlignTop);
 
+    updateMap();
+
     for(int i = 0; i < mapWidget::pSlotCount; ++i) {
-    connect(map->pSlots[i], &pSlot::clicked, this, [=](){  // Capture i by value
-        //std::cout << i << std::endl;
 
-        QString temp;
-        switch (map->pSlots[i]->getStatus()) {
-            case status::FREE:
-                temp = "Free";
-                break;
-            case status::BUSY:
-                temp = "Busy";
-                break;
-            case status::BOOKED:
-                temp = "Booked";
-                break;
-            default:
-                break;
-        }
+        connect(map->pSlots[i], &pSlot::clicked, this, [=](){  // Capture i by value
+            QString temp;
+            switch (map->pSlots[i]->getStatus()) {
+                case status::FREE:
+                    temp = "Free";
+                    break;
+                case status::BUSY:
+                    temp = "Busy";
+                    break;
+                case status::BOOKED:
+                    temp = "Booked";
+                    break;
+                default:
+                    break;
+            }
 
-        park->setCurrPSlotID(map->pSlots[i]->getID(), temp);
-    });
+            park->setCurrPSlotID(map->pSlots[i]->getID(), temp);
+        });
 
-    connect(map->pSlots[i], &pSlot::clicked, this, [=](){  // Capture i by value
-        //std::cout << i << std::endl;
+        connect(map->pSlots[i], &pSlot::clicked, this, [=](){  // Capture i by value
+            //std::cout << i << std::endl;
 
-        QString temp;
-        switch (map->pSlots[i]->getStatus()) {
-            case status::FREE:
-                temp = "Free";
-                break;
-            case status::BUSY:
-                temp = "Busy";
-                break;
-            case status::BOOKED:
-                temp = "Booked";
-                break;
-            default:
-                break;
-        }
+            QString temp;
+            switch (map->pSlots[i]->getStatus()) {
+                case status::FREE:
+                    temp = "Free";
+                    break;
+                case status::BUSY:
+                    temp = "Busy";
+                    break;
+                case status::BOOKED:
+                    temp = "Booked";
+                    break;
+                default:
+                    break;
+            }
 
-        book->setCurrPSlotID(map->pSlots[i]->getID(), temp);
-    });
+            book->setCurrPSlotID(map->pSlots[i]->getID(), temp);
+        });
 
     }
+
+    connect(park->parkBtn, &QPushButton::clicked, this, &mainWindow::parkSlot);
+    connect(park->endParkBtn, &QPushButton::clicked, this, &mainWindow::endParkSlot);
 
     //setLayout(layout);
     setWindowTitle("Parking System");
@@ -114,3 +120,67 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent) {
 }
 
 mainWindow::~mainWindow() {} ;
+
+void mainWindow::updateMap(void) {
+    QString mapString = client.getMap();
+    mapString = client.getMap();
+    auto response = client.bigDataTransfering(QJsonDocument::fromJson(mapString.toUtf8()).object());
+
+    if (response["status"].toString() == "success") {
+        QJsonArray map = response["data"].toArray();
+        for (int i = 0; i < mapWidget::pSlotCount; ++i) {
+            for (const QJsonValue& value : map) {
+                if (value["slot_id"].toInt() == i) {
+                    if (value["status"].toString() == "FREE") {
+                        this->map->pSlots[i]->setStatus(status::FREE);
+                    } else if (value["status"].toString() == "BUSY") {
+                        this->map->pSlots[i]->setStatus(status::BUSY);
+                    } else if (value["status"].toString() == "BOOKED") {
+                        this->map->pSlots[i]->setStatus(status::BOOKED);
+                    }
+                    break;
+                }
+            }
+        }
+    } else {
+        errorDialog dialog("Something went wrong", this);
+        dialog.exec();
+    }
+    
+}
+
+void mainWindow::parkSlot(void) {
+    if (park->getCurrPSlotID() == -1) {
+        errorDialog dialog("Please select a slot", this);
+        dialog.exec();
+        return;
+    }
+    QJsonObject response = client.parkingRequest(park->getCurrPSlotID());
+
+    if (response["status"].toString() == "success") {
+        updateMap();
+    } else {
+        errorDialog dialog(response["message"].toString(), this);
+        dialog.exec();
+    }
+}
+
+void mainWindow::bookSlot(void) {
+
+}
+
+void mainWindow::endParkSlot(void) {
+    if (park->getCurrPSlotID() == -1) {
+        errorDialog dialog("Please select a slot", this);
+        dialog.exec();
+        return;
+    }
+    QJsonObject response = client.endParkingRequest(park->getCurrPSlotID());
+
+    if (response["status"].toString() == "success") {
+        updateMap();
+    } else {
+        errorDialog dialog(response["message"].toString(), this);
+        dialog.exec();
+    }
+}

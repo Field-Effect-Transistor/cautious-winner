@@ -39,6 +39,13 @@ public:
         const std::string& lPlate
     ) { return addParking( slot_id, user_id, lPlate, lastHandler); }
 
+    Parking& endParking(
+        int slot_id,
+        int user_id,
+        const std::string& lPlate,
+        int& handler
+    );
+
     Parking& addBooking(
         const std::time_t& startTime,
         const std::time_t& endTime,
@@ -78,7 +85,8 @@ public:
         ERROR = -1,
         SUCCESS = 0,
         SLOT_OCCUPIED = 1,
-        INVALID_TIME_PERIOD = 2
+        INVALID_TIME_PERIOD = 2,
+        SLOT_NOT_OCCUPIED = 3
     };
 
 };
