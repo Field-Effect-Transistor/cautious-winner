@@ -281,8 +281,9 @@ std::string Server::endParking(const boost::json::value& jsonRequest, const bool
 
         int slot_id = boost::json::value_to<int>(jsonRequest.as_object().at("slot_id"));
         int user_id = boost::json::value_to<int>(jsonRequest.as_object().at("user_id"));
+        std::string lPlate = boost::json::value_to<std::string>(jsonRequest.as_object().at("lPlate"));
 
-        parking.endParking(slot_id, user_id, handler);
+        parking.endParking(slot_id, user_id, lPlate, handler);
 
         switch (handler) {
             case Parking::Handler::SUCCESS:

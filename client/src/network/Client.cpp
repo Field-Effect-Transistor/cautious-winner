@@ -149,6 +149,7 @@ QJsonObject Client::endParkingRequest(int slot_id) {
     jsonRequest["command"] = "END_PARKING";
     jsonRequest["slot_id"] = slot_id;
     jsonRequest["user_id"] = user_id;
+    jsonRequest["lPlate"] = lPlate;
 
     return QJsonDocument::fromJson(
         sendRequest(QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact)).toUtf8()

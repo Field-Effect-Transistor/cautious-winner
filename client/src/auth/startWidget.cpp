@@ -149,7 +149,7 @@ void startWidget::guestSlot() {
         if (jsonResponse["status"].toString() == "success") {
             hide();
             client.user_id = -1;
-            client.lPlate = guest->emailIn->text();
+            client.lPlate = guest->licenseIn->text();
             mainWindow* mainW = new mainWindow(client);
             mainW->show();
         } else {
