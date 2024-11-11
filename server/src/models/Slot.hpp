@@ -22,7 +22,7 @@ public:
     void updateSlotStatus(int slot_id);
     void updateAllSlots(void);
     
-    std::list<boost::json::object> getMap();
+    std::string getMap();
 
     enum STATUS {
         FREE = 0,

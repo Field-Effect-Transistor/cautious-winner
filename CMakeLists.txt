@@ -34,6 +34,7 @@ if(BUILD_CLIENT)
         client/src/main/parkWidget.cpp
         client/src/main/bookWidget.cpp
         client/src/network/Client.cpp
+        client/src/main/parkingTableWidget.cpp
     )
 
     set(CLIENT_HEADERS
@@ -50,6 +51,7 @@ if(BUILD_CLIENT)
         client/src/main/parkWidget.hpp
         client/src/main/bookWidget.hpp
         client/src/network/Client.hpp
+        client/src/main/parkingTableWidget.hpp
     )
 
     set(CLIENT_RESOURCES

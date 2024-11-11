@@ -2355,3 +2355,1232 @@ Request: {"command":"PARKING","lPlate":"12312312","slot_id":0,"user_id":-1}
 Received request from IP: 127.0.0.1
 Request: {"command":"CLOSE_CONNECTION"}
 Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 54114
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1733781600,"lPlate":"12312312","slot_id":1,"startTime":1731276000,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1733954400,"lPlate":"12312312","slot_id":1,"startTime":1731362400,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1733954400,"lPlate":"12312312","slot_id":1,"startTime":1731362400,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1733954400,"lPlate":"12312312","slot_id":1,"startTime":1731448800,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1733954400,"lPlate":"12312312","slot_id":2,"startTime":1731448800,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1731276000,"lPlate":"12312312","slot_id":1,"startTime":1731189600,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1731448800,"lPlate":"12312312","slot_id":1,"startTime":1731362400,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1731448800,"lPlate":"12312312","slot_id":15,"startTime":1731362400,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 38904
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":0,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":15,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":20,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1731362399,"lPlate":"12312312","slot_id":4,"startTime":1731276000,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1731448799,"lPlate":"12312312","slot_id":4,"startTime":1731362400,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BOOKING","endTime":1732917599,"lPlate":"12312312","slot_id":6,"startTime":1731535200,"user_id":3}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 44140
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","user_id":3,"lPlate":"12312312"}
+
+Received request from IP: 127.0.0.1
+Request: 
+
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","user_id":3,"lPlate":"12312312"}
+
+Received request from IP: 127.0.0.1
+Request: 
+
+Received request from IP: 127.0.0.1
+Request: ÿôÿý
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 38266
+Received request from IP: 127.0.0.1
+Request: {"status":"error","message":"Failed to get parkings via server part"}
+
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","user_id":3,"lPlate":"12312312"}
+
+3 {} -2
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 50144
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","user_id":3,"lPlate":"12312312"}
+
+3 {"status":"error","message":"no such column: id"} -2
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 38824
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","user_id":3,"lPlate":"12312312"}
+
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [] 0
+Received request from IP: 127.0.0.1
+Request: ÿôÿý
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 38942
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":25,"user_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"12312312","slot_id":22,"user_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 42312
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","user_id":3,"lPlate":"12312312"}
+
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: ÿôÿý
+Server created on port 3469
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 35634
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 45314
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Client connected from IP: 127.0.0.1 Port: 36858
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 37682
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 37492
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 57686
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 48534
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 35072
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 48102
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 51174
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 55232
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 35214
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","user_id":3,"lPlate":"12312312"}
+
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 45546
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","user_id":3,"lPlate":"12312312"}
+
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 45438
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Client connected from IP: 127.0.0.1 Port: 54326
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 55364
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","user_id":3,"lPlate":"12312312"}
+
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+
+Received request from IP: 127.0.0.1
+Request: ÿôÿý
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 47410
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 53384
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 38000
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 51162
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 44356
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 36282
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 55032
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 37466
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 39272
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 58090
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 49138
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 44884
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 46094
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 42568
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 38396
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 38216
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 44122
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 54856
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 48922
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 52920
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 42394
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 37852
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 56832
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 54576
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 36794
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 48858
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 46846
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 36072
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 38498
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 58240
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 43044
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 40656
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 59658
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 36692
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}{"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"0"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"0"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"0"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"0"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"0"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1

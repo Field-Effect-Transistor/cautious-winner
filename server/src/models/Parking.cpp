@@ -69,7 +69,17 @@ Parking& Parking::addBooking(
     int& handler
 ) {
     // Перевірка коректності часу початку і завершення
-    if (endTime <= startTime) {
+    if (endTime < startTime) {
+        handler = Handler::INVALID_TIME_PERIOD;
+        return *this;
+    }
+
+    if (startTime < std::time(nullptr)) {
+        handler = Handler::INVALID_TIME_PERIOD;
+        return *this;
+    }
+    
+    if (startTime < std::time(nullptr)) {
         handler = Handler::INVALID_TIME_PERIOD;
         return *this;
     }
@@ -179,15 +189,17 @@ std::string Parking::getParkings(int user_id, int& handler) {
     using boost::json::array;
     using boost::json::value;
 
-    object jsonResponse;
     array parkings;
 
     sqlite3_stmt* stmt;
-    std::string query = "SELECT id, type, start_date, end_date, slot_id, user_id, lPlate FROM Parking WHERE user_id = ?";
+    std::string query = "SELECT park_id, type, start_date, end_date, slot_id, user_id, lPlate FROM Parking WHERE user_id = ?";
     
     if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
         handler = Handler::PREPARE_ERROR;
-        return "{}";  // Повертаємо порожній JSON у разі помилки
+        boost::json::object errorObj;
+        errorObj["status"] = "error";
+        errorObj["message"] = sqlite3_errmsg(db.getDB());
+        return boost::json::serialize(errorObj);
     }
 
     sqlite3_bind_int(stmt, 1, user_id);
@@ -204,12 +216,10 @@ std::string Parking::getParkings(int user_id, int& handler) {
 
     sqlite3_finalize(stmt);
 
-    jsonResponse["parkings"] = parkings;
-
     handler = Handler::SUCCESS;
 
     // Перетворюємо об'єкт Boost.JSON в рядок JSON
-    return boost::json::serialize(jsonResponse);
+    return boost::json::serialize(parkings);
 }
 
 std::string Parking::getParkings(const std::string& lPlate, int& handler) {
@@ -219,11 +229,10 @@ std::string Parking::getParkings(const std::string& lPlate, int& handler) {
     using boost::json::array;
     using boost::json::value;
 
-    object jsonResponse;
     array parkings;
 
     sqlite3_stmt* stmt;
-    std::string query = "SELECT id, type, start_date, end_date, slot_id, user_id, lPlate FROM Parking WHERE lPlate = ?";
+    std::string query = "SELECT park_id, type, start_date, end_date, slot_id, user_id, lPlate FROM Parking WHERE lPlate = ?";
     
     if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
         handler = Handler::PREPARE_ERROR;
@@ -244,12 +253,10 @@ std::string Parking::getParkings(const std::string& lPlate, int& handler) {
 
     sqlite3_finalize(stmt);
 
-    jsonResponse["parkings"] = parkings;
-
     handler = Handler::SUCCESS;
 
     // Перетворюємо об'єкт Boost.JSON в рядок JSON
-    return boost::json::serialize(jsonResponse);
+    return boost::json::serialize(parkings);
 }
 
 std::string Parking::toJson() const {

@@ -30,7 +30,7 @@ private:
         const std::string& request,
         bool& keepConnection,
         bool& isLogined,
-        std::list<boost::json::object>& bigData
+        std::string& bigData
     );
     std::string registerUser(const boost::json::value& jsonRequest);
     std::string userLogIn(const boost::json::value& jsonRequest, bool& isLogined);
@@ -38,8 +38,12 @@ private:
     std::string parking(const boost::json::value& jsonRequest, const bool& isLogined);
     std::string endParking(const boost::json::value& jsonRequest, const bool& isLogined);
     std::string booking(const boost::json::value& jsonRequest, const bool& isLogined);
-    std::string getMap(std::list<boost::json::object>& bigData);
-    std::string getParkingList(const boost::json::value& jsonRequest);
-    std::string setSlotInfo(const boost::json::value& jsonRequest);
-    std::string bigDataTransfer(std::list<boost::json::object>& bigData);
+    std::string getMap(std::string& bigData);
+    std::string getParkingList(
+        const boost::json::value& jsonRequest,
+        const bool& isLogined,
+        std::string& bigData
+    );
+    std::string getSlotInfo(const boost::json::value& jsonRequest, const bool& isLogined);
+    std::string bigDataTransfer(std::string& bigData);
 };

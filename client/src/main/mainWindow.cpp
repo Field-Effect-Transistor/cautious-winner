@@ -9,6 +9,7 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
     actionsLayout = new QBoxLayout(QBoxLayout::TopToBottom);
     mapTableLayout = new QBoxLayout(QBoxLayout::TopToBottom);
 
+
     alignWidget = new QWidget(this);
 
     menuGB = new QGroupBox("Menu", this);
@@ -21,6 +22,8 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
     map = new mapWidget(this);
     park = new parkWidget(this);
     book = new bookWidget(this);
+    parkingTable = new parkingTableWidget(this);
+    blank = new QWidget(this);
 
     parkBtn = new QPushButton("Park", this);
     parkHistoryBtn = new QPushButton("Park History", this);
@@ -31,6 +34,7 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
     mapTableGB->setLayout(mapTableLayout);
     mapTableLayout->addWidget(mapTableWidget);
     mapTableWidget->addWidget(map);
+    mapTableWidget->addWidget(parkingTable);
     mapTableLayout->setSizeConstraint(QLayout::SetFixedSize);
 
     menuGB->setLayout(menuLayout);
@@ -44,14 +48,25 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
     actionsLayout->addWidget(actionsWidget);
     actionsWidget->addWidget(park);
     actionsWidget->addWidget(book);
+    actionsWidget->addWidget(blank);
+
+    connect(parkBtn, &QPushButton::clicked, this, &mainWindow::updateMap);
     connect(parkBtn, &QPushButton::clicked, this, [&](){
         actionsWidget->setCurrentIndex(0);
+        mapTableWidget->setCurrentIndex(0);
     });
-    connect(parkBtn, &QPushButton::clicked, this, &mainWindow::updateMap);
+
+    connect(bookBtn, &QPushButton::clicked, this, &mainWindow::updateMap);
     connect(bookBtn, &QPushButton::clicked, this, [&](){
         actionsWidget->setCurrentIndex(1);
+        mapTableWidget->setCurrentIndex(0);
     });
-    connect(bookBtn, &QPushButton::clicked, this, &mainWindow::updateMap);
+
+    connect(parkHistoryBtn, &QPushButton::clicked, this, [&](){
+        actionsWidget->setCurrentIndex(2);
+        mapTableWidget->setCurrentIndex(1);
+    });
+    connect(parkHistoryBtn, &QPushButton::clicked, this, &mainWindow::parkHistorySlot);
 
     leftLayout->addWidget(menuGB);
     leftLayout->addWidget(actionsGB);
@@ -113,6 +128,7 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
 
     connect(park->parkBtn, &QPushButton::clicked, this, &mainWindow::parkSlot);
     connect(park->endParkBtn, &QPushButton::clicked, this, &mainWindow::endParkSlot);
+    connect(book->bookBtn, &QPushButton::clicked, this, &mainWindow::bookSlot);
 
     //setLayout(layout);
     setWindowTitle("Parking System");
@@ -166,7 +182,35 @@ void mainWindow::parkSlot(void) {
 }
 
 void mainWindow::bookSlot(void) {
+    if (book->getCurrPSlotID() == -1) {
+        errorDialog dialog("Please select a slot", this);
+        dialog.exec();
+        return;
+    }
 
+    // Отримуємо QDateTime з QDateEdit
+    QDateTime startDateTime = book->startDateEdit->dateTime();
+    QDateTime endDateTime = book->endDateEdit->dateTime();
+
+    // Встановлюємо час на початок доби (00:00:00) для startDateTime
+    startDateTime.setTime(QTime(0, 0, 0));
+
+    // Встановлюємо час на кінець доби (23:59:59) для endDateTime
+    endDateTime.setTime(QTime(23, 59, 59));
+
+    // Перетворюємо на Unix час
+    qint64 startEpoch = startDateTime.toSecsSinceEpoch();
+    qint64 endEpoch = endDateTime.toSecsSinceEpoch();
+
+    // Відправляємо запит з оновленими часами
+    QJsonObject response = client.bookingRequest(startEpoch, endEpoch, book->getCurrPSlotID());
+
+    if (response["status"].toString() == "success") {
+        updateMap();
+    } else {
+        errorDialog dialog(response["message"].toString(), this);
+        dialog.exec();
+    }
 }
 
 void mainWindow::endParkSlot(void) {
@@ -183,4 +227,13 @@ void mainWindow::endParkSlot(void) {
         errorDialog dialog(response["message"].toString(), this);
         dialog.exec();
     }
+}
+
+void mainWindow::parkHistorySlot(void) {
+    auto response = client.getParkingListRequest(client.user_id, client.lPlate);
+    response = client.getParkingListRequest(client.user_id, client.lPlate);
+    QJsonObject parkingList = client.bigDataTransfering(QJsonDocument::fromJson(response.toUtf8()).object());
+    
+    parkingTable->updateTable(parkingList);
+
 }

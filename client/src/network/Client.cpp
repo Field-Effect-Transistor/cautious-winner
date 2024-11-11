@@ -110,7 +110,7 @@ QString Client::getMap() {
 
 QJsonObject Client::bigDataTransfering(const QJsonObject& request) {
     QJsonObject response;
-    QJsonArray bigData;
+    QString bigData;
     
     if (request["status"].toString() == "startBigDataTransfering") {
         if (request["command"].toString() == "GET_MAP") {
@@ -119,16 +119,34 @@ QJsonObject Client::bigDataTransfering(const QJsonObject& request) {
                     sendRequest("{\"command\":\"BIG_DATA_TRANSFER\"}").toUtf8()
                 ).object();
 
-                for (const QJsonValue& value : response["data"].toArray()) {
-                    bigData.append(value);
-                }
+                bigData = bigData + response["data"].toString();
 
             } while (response["status"].toString() != "endBigDataTransfering");
+            
+            QJsonArray mapArray = QJsonDocument::fromJson(bigData.toUtf8()).array();
+            response["status"] = "success";
+            response["data"] = mapArray;
+            return response;
+        } else if (request["command"].toString() == "GET_PARKING_LIST") {
+            do {
+                response = QJsonDocument::fromJson(
+                    sendRequest("{\"command\":\"BIG_DATA_TRANSFER\"}").toUtf8()
+                ).object();
+
+                bigData = bigData + response["data"].toString();
+
+            } while (response["status"].toString() != "endBigDataTransfering");
+            QJsonObject list = QJsonDocument::fromJson(bigData.toUtf8()).object();
+            response["status"] = "success";
+            response["data"] = list;
+            return response;
         }
     }
     
-    response["status"] = "success";
-    response["data"] = bigData;
+    QJsonArray mapArray = QJsonDocument::fromJson(bigData.toUtf8()).array();
+    response["status"] = "error";
+    response["message"] = "unsupported command";
+    //std::cout << response["data"].toString().toStdString() << std::endl;
     return response;
 }
 
@@ -155,3 +173,27 @@ QJsonObject Client::endParkingRequest(int slot_id) {
         sendRequest(QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact)).toUtf8()
     ).object();
 }   
+
+QJsonObject Client::bookingRequest(time_t startTime, time_t endTime, int slot_id) { 
+    QJsonObject jsonRequest;
+    jsonRequest["command"] = "BOOKING";
+    jsonRequest["startTime"] = static_cast<int>(startTime);
+    jsonRequest["endTime"] = static_cast<int>(endTime);
+    jsonRequest["slot_id"] = slot_id;
+    jsonRequest["user_id"] = user_id;
+    jsonRequest["lPlate"] = lPlate;
+
+    return QJsonDocument::fromJson(
+        sendRequest(QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact)).toUtf8()
+    ).object();
+}
+
+QString Client::getParkingListRequest(int user_id, const QString& lPlate) {
+    QJsonObject jsonRequest;
+    jsonRequest["command"] = "GET_PARKING_LIST";
+    jsonRequest["user_id"] = user_id;
+    jsonRequest["lPlate"] = lPlate;
+
+    return sendRequest(QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact));
+
+}

@@ -61,7 +61,7 @@ void Server::handleClient(std::shared_ptr<boost::asio::ip::tcp::socket> socket) 
 
         bool keepConnection = true;
         bool isLogined = false;
-        std::list<boost::json::object> bigData;
+        std::string bigData;
 
         while (keepConnection) {
             // Читання запиту від клієнта
@@ -104,7 +104,7 @@ std::string Server::processRequest(
     const std::string& request,
     bool& keepConnection,
     bool& isLogined,
-    std::list<boost::json::object>& bigData
+    std::string& bigData
 ) {
     try {
         boost::json::value jsonRequest = boost::json::parse(request);
@@ -134,6 +134,8 @@ std::string Server::processRequest(
             return booking(jsonRequest, isLogined);
         } else if ( command == "END_PARKING") {
             return endParking(jsonRequest, isLogined);
+        } else if (command == "GET_PARKING_LIST") {
+            return getParkingList(jsonRequest, isLogined, bigData);
         }
 
         return "{\"status\":\"error\",\"message\":\"Unknown command\"}";
@@ -197,31 +199,24 @@ std::string Server::guestLogIn(bool& isLogined) {
     return "{\"status\":\"success\"}";
 }
 
-std::string Server::getMap(std::list<boost::json::object>& bigData) {
+std::string Server::getMap(std::string& bigData) {
     Slot slot(db);  
     bigData =  slot.getMap();
 
     return "{\"status\":\"startBigDataTransfering\",\"command\":\"GET_MAP\"}";
 }
 
-std::string Server::bigDataTransfer(std::list<boost::json::object>& bigData) {
+std::string Server::bigDataTransfer(std::string& bigData) {
     boost::json::object toClient;
-    boost::json::array data;
-    
-    int counter = 0;
-    while ((!bigData.empty()) and counter < 8) {
-        data.push_back(bigData.front());
-        ++counter;
-        bigData.pop_front();
-    }
+
+    toClient["data"] = bigData.substr(0, 512);
+    bigData.erase(0, 512);
 
     if(bigData.empty()) {
         toClient["status"] = "endBigDataTransfering";
     } else {
         toClient["status"] = "bigDataTransfering";
     }
-    toClient["data"] = data;
-
 
     return boost::json::serialize(toClient);
 }
@@ -274,7 +269,6 @@ std::string Server::booking(const boost::json::value& jsonRequest, const bool& i
 }
 
 std::string Server::endParking(const boost::json::value& jsonRequest, const bool& isLogined) {
-    std::cout << "END PARKING" << std::endl;
     if (isLogined) {
         Parking parking(db);
         int handler;
@@ -296,4 +290,45 @@ std::string Server::endParking(const boost::json::value& jsonRequest, const bool
     } else {
         return "{\"status\":\"error\",\"message\":\"You are not logged in\"}";
     }
+}
+
+std::string Server::getParkingList(
+    const boost::json::value& jsonRequest,
+    const bool& isLogined,
+    std::string& bigData
+) {
+    if (true) {
+        Parking parking(db);
+        int handler;
+        boost::json::object toClient;
+        std::string temp;
+
+        int user_id = boost::json::value_to<int>(jsonRequest.as_object().at("user_id"));
+        std::string lPlate = boost::json::value_to<std::string>(jsonRequest.as_object().at("lPlate"));
+
+        if (user_id != -1) {
+            temp = parking.getParkings(user_id, handler);
+            std::cout << user_id << " " << temp << " " << handler << std::endl;
+            if (handler == Parking::Handler::SUCCESS ) {
+                toClient["userParkings"] = temp;
+            } else {
+                return "{\"status\":\"error\",\"message\":\"Failed to get parkings via server part\"}";
+            }
+        }
+        
+        temp = parking.getParkings(lPlate, handler);
+            std::cout << user_id << " " << temp << " " << handler << std::endl;
+        if (handler == Parking::Handler::SUCCESS ) {
+            toClient["lPlateParkings"] = temp;
+        } else {
+            return "{\"status\":\"error\",\"message\":\"Failed to get parkings via server part\"}";
+        }
+
+        toClient["status"] = "success";
+        bigData = boost::json::serialize(toClient);
+        return "{\"status\":\"startBigDataTransfering\",\"command\":\"GET_PARKING_LIST\"}";
+    } else {
+        return "{\"status\":\"error\",\"message\":\"You are not logged in\"}";
+    }
+
 }

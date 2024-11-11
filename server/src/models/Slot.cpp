@@ -138,7 +138,7 @@ void Slot::updateAllSlots() {
     }
 }
 
-std::list<boost::json::object> Slot::getMap() {
+std::string Slot::getMap() {
     updateAllSlots();
 
     sqlite3_stmt* stmt;
@@ -146,7 +146,11 @@ std::list<boost::json::object> Slot::getMap() {
     std::list<boost::json::object> slotList;
 
     if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
-        return std::list<boost::json::object>(); // Якщо виникла помилка при підготовці запиту, повертаємо порожній JSON
+        // Якщо виникла помилка при підготовці запиту, повертаємо JSON із повідомленням про помилку
+        boost::json::object errorObj;
+        errorObj["status"] = "error";
+        errorObj["message"] = sqlite3_errmsg(db.getDB());
+        return boost::json::serialize(errorObj);
     }
 
     while (sqlite3_step(stmt) == SQLITE_ROW) {
@@ -159,11 +163,18 @@ std::list<boost::json::object> Slot::getMap() {
         slotObject["slot_id"] = slot_id;
         slotObject["status"] = status;
 
-        // Додаємо об'єкт до масиву
+        // Додаємо об'єкт до списку
         slotList.push_back(std::move(slotObject));
     }
 
     sqlite3_finalize(stmt);
 
-    return slotList;
+    // Конвертуємо список об'єктів у JSON-масив
+    boost::json::array jsonArray;
+    for (const auto& slot : slotList) {
+        jsonArray.push_back(slot);
+    }
+
+    // Повертаємо JSON-масив у вигляді рядка
+    return boost::json::serialize(jsonArray);
 }

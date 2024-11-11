@@ -13,6 +13,7 @@
 #include "mapWidget.hpp"
 #include "parkWidget.hpp"
 #include "bookWidget.hpp"
+#include "parkingTableWidget.hpp"
 #include "../network/Client.hpp"
 #include "../auth/errorDialog.hpp"
 
@@ -39,6 +40,8 @@ protected:
     mapWidget* map;
     parkWidget* park;
     bookWidget* book;
+    parkingTableWidget* parkingTable;
+    QWidget* blank;
 
     QWidget* alignWidget;
     //QLabel* mapTableLabel;
@@ -58,4 +61,5 @@ public slots:
     void parkSlot(void);
     void endParkSlot(void);
     void bookSlot(void);
+    void parkHistorySlot(void);
 };

@@ -19,14 +19,15 @@ protected:
     QLabel* startDateLabel;
     QLabel* endDateLabel;
 
+public:
     QDateEdit* startDateEdit;
     QDateEdit* endDateEdit;
 
     QPushButton* bookBtn;
 
-public:
     bookWidget(QWidget* parent = nullptr);
     ~bookWidget();
     
     void setCurrPSlotID(int ID, const QString& status = "");
+    int getCurrPSlotID(void) const { return currPSlotID; }
 };
