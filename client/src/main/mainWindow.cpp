@@ -9,7 +9,6 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
     actionsLayout = new QBoxLayout(QBoxLayout::TopToBottom);
     mapTableLayout = new QBoxLayout(QBoxLayout::TopToBottom);
 
-
     alignWidget = new QWidget(this);
 
     menuGB = new QGroupBox("Menu", this);
@@ -53,7 +52,8 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
     actionsWidget->addWidget(book);
     actionsWidget->addWidget(blank);
     actionsWidget->addWidget(slotStatus);
-
+    actionsWidget->setFixedWidth(190);
+    actionsWidget->setCurrentIndex(2);
 
     connect(parkBtn, &QPushButton::clicked, this, &mainWindow::updateMap);
     connect(parkBtn, &QPushButton::clicked, this, [&](){
@@ -78,7 +78,7 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
         mapTableWidget->setCurrentIndex(0);
     });
     connect(slotInfoBtn, &QPushButton::clicked, this, &mainWindow::slotStatusSlot);
-
+    
     leftLayout->addWidget(menuGB);
     leftLayout->addWidget(actionsGB);
 

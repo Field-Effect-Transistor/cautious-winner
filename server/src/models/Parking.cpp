@@ -298,7 +298,7 @@ std::string Parking::getSlotParkings(int slot_id) {
     sqlite3_stmt* stmt;
     
     // SQL запит з фільтрацією за часом
-    std::string query = "SELECT type, start_date, end_date FROM Parking WHERE slot_id = ? AND (end_date >= ? OR end_date == 0)";
+    std::string query = "SELECT type, start_date, end_date FROM Parking WHERE slot_id = ? AND (end_date >= ? OR end_date is NULL)";
 
     if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
         // Повернення порожнього JSON у випадку помилки

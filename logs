@@ -5079,3 +5079,510 @@ Request: {"command":"BIG_DATA_TRANSFER"}
 Received request from IP: 127.0.0.1
 Request: {"command":"CLOSE_CONNECTION"}
 Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 51394
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":0}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":0}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 35858
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"PARKING","lPlate":"asdasdsa","slot_id":6,"user_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":5}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":5}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":5}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":5}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":5}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":5}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 55500
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 53020
+Received request from IP: 127.0.0.1
+Request: {"command":"GUEST_LOGIN"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":5}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":5}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 45520
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 49996
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Server created on port 3469
+Client connected from IP: 127.0.0.1 Port: 49766
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 47934
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 51788
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 44130
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 46998
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"CLOSE_CONNECTION"}
+Closing connection with client from IP: 127.0.0.1
+Client connected from IP: 127.0.0.1 Port: 41208
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Client connected from IP: 127.0.0.1 Port: 33800
+Received request from IP: 127.0.0.1
+Request: {"command":"USER_LOGIN","email":"vincente@gmail.com","password":"12345678qQ!"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":-1}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":4}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_SLOT_INFO","slot_id":6}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_MAP"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"1731401376"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"1731401393"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"1731401395"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"},{"slot_id":"0","type":"0","start_date":"1731401957","end_date":"1731401958"},{"slot_id":"1","type":"0","start_date":"1731401959","end_date":"1731401959"},{"slot_id":"2","type":"0","start_date":"1731401962","end_date":"1731401962"},{"slot_id":"3","type":"0","start_date":"1731401964","end_date":"1731401964"},{"slot_id":"0","type":"0","start_date":"1731401969","end_date":"1731401970"},{"slot_id":"0","type":"0","start_date":"1731401970","end_date":"1731401971"},{"slot_id":"0","type":"0","start_date":"1731401971","end_date":"1731401972"},{"slot_id":"0","type":"0","start_date":"1731401972","end_date":"1731401973"},{"slot_id":"6","type":"0","start_date":"1731413076","end_date":"1731413085"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"1731414229"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"1731414230"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"GET_PARKING_LIST","lPlate":"12312312","user_id":3}
+3 [{"slot_id":"0","type":"0","start_date":"1731281610","end_date":"1731401376"},{"slot_id":"15","type":"0","start_date":"1731281611","end_date":"1731401393"},{"slot_id":"20","type":"0","start_date":"1731281614","end_date":"1731401395"},{"slot_id":"4","type":"1","start_date":"1731362400","end_date":"1731448799"},{"slot_id":"6","type":"1","start_date":"1731535200","end_date":"1732917599"},{"slot_id":"0","type":"0","start_date":"1731401957","end_date":"1731401958"},{"slot_id":"1","type":"0","start_date":"1731401959","end_date":"1731401959"},{"slot_id":"2","type":"0","start_date":"1731401962","end_date":"1731401962"},{"slot_id":"3","type":"0","start_date":"1731401964","end_date":"1731401964"},{"slot_id":"0","type":"0","start_date":"1731401969","end_date":"1731401970"},{"slot_id":"0","type":"0","start_date":"1731401970","end_date":"1731401971"},{"slot_id":"0","type":"0","start_date":"1731401971","end_date":"1731401972"},{"slot_id":"0","type":"0","start_date":"1731401972","end_date":"1731401973"},{"slot_id":"6","type":"0","start_date":"1731413076","end_date":"1731413085"}] 0
+3 [{"slot_id":"25","type":"0","start_date":"1731282360","end_date":"1731414229"},{"slot_id":"22","type":"0","start_date":"1731282361","end_date":"1731414230"}] 0
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}
+Received request from IP: 127.0.0.1
+Request: {"command":"BIG_DATA_TRANSFER"}

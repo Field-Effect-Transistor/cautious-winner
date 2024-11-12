@@ -37,11 +37,12 @@ void slotStatusTable::updateTable(const QJsonObject& slotInfo) {
                 info["start_date"].toVariant().toLongLong()
             ).toString("yyyy-MM-dd")
         ));
-        setItem(rowCount, 1, new QTableWidgetItem( info["end_date"].toString() == "0" ?
+        setItem(rowCount, 1, new QTableWidgetItem( info["end_date"].toInt() == 0?
             QString("N/A") :
             QDateTime::fromSecsSinceEpoch(
                 info["end_date"].toVariant().toLongLong()
-            ).toString("yyyy-MM-dd")
+            ).toString("yyyy-MM-dd")   
+
         ));
 
         ++rowCount;
