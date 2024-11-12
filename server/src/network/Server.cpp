@@ -136,6 +136,8 @@ std::string Server::processRequest(
             return endParking(jsonRequest, isLogined);
         } else if (command == "GET_PARKING_LIST") {
             return getParkingList(jsonRequest, isLogined, bigData);
+        } else if ( command == "GET_SLOT_INFO") {
+            return getSlotInfo(jsonRequest, isLogined, bigData);            
         }
 
         return "{\"status\":\"error\",\"message\":\"Unknown command\"}";
@@ -297,7 +299,7 @@ std::string Server::getParkingList(
     const bool& isLogined,
     std::string& bigData
 ) {
-    if (true) {
+    if (isLogined) {
         Parking parking(db);
         int handler;
         boost::json::object toClient;
@@ -327,6 +329,25 @@ std::string Server::getParkingList(
         toClient["status"] = "success";
         bigData = boost::json::serialize(toClient);
         return "{\"status\":\"startBigDataTransfering\",\"command\":\"GET_PARKING_LIST\"}";
+    } else {
+        return "{\"status\":\"error\",\"message\":\"You are not logged in\"}";
+    }
+
+}
+
+std::string Server::getSlotInfo(
+    const boost::json::value& jsonRequest,
+    const bool& isLogined,
+    std::string& bigData
+) {
+    if (true) {
+        Parking parking(db);
+        boost::json::object toClient;
+
+        int slot_id = boost::json::value_to<int>(jsonRequest.as_object().at("slot_id"));
+
+        bigData = parking.getSlotParkings(slot_id);
+        return "{\"status\":\"startBigDataTransfering\",\"command\":\"GET_SLOT_INFO\"}";
     } else {
         return "{\"status\":\"error\",\"message\":\"You are not logged in\"}";
     }

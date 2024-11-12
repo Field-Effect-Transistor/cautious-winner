@@ -33,20 +33,27 @@
 │   │   │   ├── mainWindow.hpp
 │   │   │   ├── mapWidget.cpp
 │   │   │   ├── mapWidget.hpp
+│   │   │   ├── parkingTableWidget.cpp
+│   │   │   ├── parkingTableWidget.hpp
 │   │   │   ├── parkWidget.cpp
 │   │   │   ├── parkWidget.hpp
 │   │   │   ├── pSlot.cpp
 │   │   │   └── pSlot.hpp
-│   │   └── main.cpp
+│   │   ├── main.cpp
+│   │   └── network
+│   │       ├── Client.cpp
+│   │       └── Client.hpp
 │   └── themes
 │       ├── dark_theme.qss
 │       ├── hacker_theme.qss
 │       ├── light_theme.qss
 │       └── themes.qrc
+├── cloc
 ├── CMakeLists.txt
 ├── include
 │   ├── validation.cpp
 │   └── validation.hpp
+├── logs
 ├── README.md
 └── server
     ├── database
@@ -58,10 +65,15 @@
         │   ├── Database.cpp
         │   └── Database.hpp
         ├── main.cpp
-        └── models
-            ├── Parking.cpp
-            ├── Parking.hpp
-            ├── User.cpp
-            └── User.hpp
+        ├── models
+        │   ├── Parking.cpp
+        │   ├── Parking.hpp
+        │   ├── Slot.cpp
+        │   ├── Slot.hpp
+        │   ├── User.cpp
+        │   └── User.hpp
+        └── network
+            ├── Server.cpp
+            └── Server.hpp
 
-15 directories, 50 files
+17 directories, 60 files

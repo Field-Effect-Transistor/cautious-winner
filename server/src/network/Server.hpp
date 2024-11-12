@@ -44,6 +44,10 @@ private:
         const bool& isLogined,
         std::string& bigData
     );
-    std::string getSlotInfo(const boost::json::value& jsonRequest, const bool& isLogined);
+    std::string getSlotInfo(
+        const boost::json::value& jsonRequest,
+        const bool& isLogined,
+        std::string& bigData
+    );
     std::string bigDataTransfer(std::string& bigData);
 };

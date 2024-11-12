@@ -140,6 +140,16 @@ QJsonObject Client::bigDataTransfering(const QJsonObject& request) {
             response["status"] = "success";
             response["data"] = list;
             return response;
+        } else if (request["command"].toString() == "GET_SLOT_INFO") {
+            do {
+                response = QJsonDocument::fromJson(
+                    sendRequest("{\"command\":\"BIG_DATA_TRANSFER\"}").toUtf8()
+                ).object();
+
+                bigData = bigData + response["data"].toString();
+
+            } while (response["status"].toString() != "endBigDataTransfering");
+            return QJsonDocument::fromJson(bigData.toUtf8()).object();
         }
     }
     
@@ -195,5 +205,12 @@ QString Client::getParkingListRequest(int user_id, const QString& lPlate) {
     jsonRequest["lPlate"] = lPlate;
 
     return sendRequest(QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact));
+}
 
+QString Client::getSlotInfoRequest(int slot_id) {
+    QJsonObject jsonRequest;
+    jsonRequest["command"] = "GET_SLOT_INFO";
+    jsonRequest["slot_id"] = slot_id;
+
+    return sendRequest(QJsonDocument(jsonRequest).toJson(QJsonDocument::Compact));
 }

@@ -281,23 +281,32 @@ std::string Parking::toJson() const {
 
 std::string Parking::getSlotParkings(int slot_id) {
     slot->updateAllSlots();
-    
+
     using boost::json::array;
     using boost::json::object;
     using boost::json::value;
+
+    // Отримуємо поточний час і обчислюємо час початку поточної доби в форматі Unix
+    auto now = std::chrono::system_clock::now();
+    auto todayStart = std::chrono::time_point_cast<std::chrono::seconds>(
+        std::chrono::system_clock::from_time_t(std::time(nullptr))
+    ).time_since_epoch().count();
 
     // Створення масиву для паркувань
     array parkingsArray;
 
     sqlite3_stmt* stmt;
-    std::string query = "SELECT type, start_date, end_date FROM Parking WHERE slot_id = ?";
+    
+    // SQL запит з фільтрацією за часом
+    std::string query = "SELECT type, start_date, end_date FROM Parking WHERE slot_id = ? AND (end_date >= ? OR end_date == 0)";
 
     if (sqlite3_prepare_v2(db.getDB(), query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
         // Повернення порожнього JSON у випадку помилки
-        return "{}";
+        return "{\"status\": \"error\"}";
     }
 
     sqlite3_bind_int(stmt, 1, slot_id);
+    sqlite3_bind_int(stmt, 2, todayStart);  // Підставляємо час початку доби
 
     // Перебір результатів запиту та додавання їх до масиву
     while (sqlite3_step(stmt) == SQLITE_ROW) {
@@ -315,6 +324,7 @@ std::string Parking::getSlotParkings(int slot_id) {
     // Створення об'єкта JSON для повернення
     object resultObj;
     resultObj["parkings"] = parkingsArray;
+    resultObj["status"] = "success";
 
     // Перетворення об'єкта JSON в рядок
     return boost::json::serialize(resultObj);

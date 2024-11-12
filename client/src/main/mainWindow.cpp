@@ -23,11 +23,13 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
     park = new parkWidget(this);
     book = new bookWidget(this);
     parkingTable = new parkingTableWidget(this);
+    slotStatus = new slotStatusTable(this);
     blank = new QWidget(this);
 
     parkBtn = new QPushButton("Park", this);
     parkHistoryBtn = new QPushButton("Park History", this);
     bookBtn = new QPushButton("Book", this);
+    slotInfoBtn = new QPushButton("Slot info", this);
     exitBtn = new QPushButton("Exit", this);
     connect(exitBtn, &QPushButton::clicked, this, &mainWindow::close);
 
@@ -42,6 +44,7 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
     menuLayout->addWidget(parkHistoryBtn);
     parkHistoryBtn->setMinimumWidth(190);
     menuLayout->addWidget(bookBtn);
+    menuLayout->addWidget(slotInfoBtn);
     menuLayout->addWidget(exitBtn);
 
     actionsGB->setLayout(actionsLayout);
@@ -49,6 +52,8 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
     actionsWidget->addWidget(park);
     actionsWidget->addWidget(book);
     actionsWidget->addWidget(blank);
+    actionsWidget->addWidget(slotStatus);
+
 
     connect(parkBtn, &QPushButton::clicked, this, &mainWindow::updateMap);
     connect(parkBtn, &QPushButton::clicked, this, [&](){
@@ -67,6 +72,12 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
         mapTableWidget->setCurrentIndex(1);
     });
     connect(parkHistoryBtn, &QPushButton::clicked, this, &mainWindow::parkHistorySlot);
+    
+    connect(slotInfoBtn, &QPushButton::clicked, this, [&](){
+        actionsWidget->setCurrentIndex(3);
+        mapTableWidget->setCurrentIndex(0);
+    });
+    connect(slotInfoBtn, &QPushButton::clicked, this, &mainWindow::slotStatusSlot);
 
     leftLayout->addWidget(menuGB);
     leftLayout->addWidget(actionsGB);
@@ -124,6 +135,10 @@ mainWindow::mainWindow(Client& client, QWidget* parent) : QWidget(parent), clien
             book->setCurrPSlotID(map->pSlots[i]->getID(), temp);
         });
 
+        connect(map->pSlots[i], &pSlot::clicked, this, [=](){
+            slotStatus->currSlot = map->pSlots[i]->getID();
+            slotStatusSlot();
+        });
     }
 
     connect(park->parkBtn, &QPushButton::clicked, this, &mainWindow::parkSlot);
@@ -236,4 +251,15 @@ void mainWindow::parkHistorySlot(void) {
     
     parkingTable->updateTable(parkingList);
 
+}
+
+void mainWindow::slotStatusSlot(void) {
+    QString slotInfo = client.getSlotInfoRequest(slotStatus->currSlot);
+    slotInfo = client.getSlotInfoRequest(slotStatus->currSlot);
+
+    slotStatus->updateTable(
+        client.bigDataTransfering(
+            QJsonDocument::fromJson(slotInfo.toUtf8()).object()
+        )
+    );
 }

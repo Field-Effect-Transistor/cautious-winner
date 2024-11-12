@@ -19,4 +19,5 @@ public:
     ~parkingTableWidget();
 
     void updateTable(const QJsonObject& parkings);
+
 };

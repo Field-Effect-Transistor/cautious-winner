@@ -48,6 +48,7 @@ public:
     );
     QJsonObject endParkingRequest(int slot_id);
     QString getParkingListRequest(int user_id, const QString& lPlate);
+    QString getSlotInfoRequest(int slot_id);
 
 private slots:
     void onConnected();
