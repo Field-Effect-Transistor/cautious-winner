@@ -1,0 +1,79 @@
+.
+├── client
+│   ├── resources
+│   │   ├── icons
+│   │   │   └── loginPic.ico
+│   │   ├── pictures
+│   │   │   ├── loginPic250X250.png
+│   │   │   ├── loginPic282x260_black.png
+│   │   │   ├── loginPic282x260_darkgray.png
+│   │   │   ├── loginPic282x260.png
+│   │   │   ├── loginPic400X400.png
+│   │   │   ├── loginPic.png
+│   │   │   └── loginPicSrc.jpg
+│   │   └── resources.qrc
+│   ├── src
+│   │   ├── auth
+│   │   │   ├── authWidget.cpp
+│   │   │   ├── authWidget.hpp
+│   │   │   ├── errorDialog.cpp
+│   │   │   ├── errorDialog.hpp
+│   │   │   ├── guestWidget.cpp
+│   │   │   ├── guestWidget.hpp
+│   │   │   ├── loginWidget.cpp
+│   │   │   ├── loginWidget.hpp
+│   │   │   ├── regWidget.cpp
+│   │   │   ├── regWidget.hpp
+│   │   │   ├── startWidget.cpp
+│   │   │   └── startWidget.hpp
+│   │   ├── main
+│   │   │   ├── bookWidget.cpp
+│   │   │   ├── bookWidget.hpp
+│   │   │   ├── mainWindow.cpp
+│   │   │   ├── mainWindow.hpp
+│   │   │   ├── mapWidget.cpp
+│   │   │   ├── mapWidget.hpp
+│   │   │   ├── parkingTableWidget.cpp
+│   │   │   ├── parkingTableWidget.hpp
+│   │   │   ├── parkWidget.cpp
+│   │   │   ├── parkWidget.hpp
+│   │   │   ├── pSlot.cpp
+│   │   │   └── pSlot.hpp
+│   │   ├── main.cpp
+│   │   └── network
+│   │       ├── Client.cpp
+│   │       └── Client.hpp
+│   └── themes
+│       ├── dark_theme.qss
+│       ├── hacker_theme.qss
+│       ├── light_theme.qss
+│       └── themes.qrc
+├── cloc
+├── CMakeLists.txt
+├── include
+│   ├── validation.cpp
+│   └── validation.hpp
+├── logs
+├── README.md
+└── server
+    ├── database
+    │   ├── db.sqlite
+    │   ├── diagram.puml
+    │   └── init_db.sql
+    └── src
+        ├── database
+        │   ├── Database.cpp
+        │   └── Database.hpp
+        ├── main.cpp
+        ├── models
+        │   ├── Parking.cpp
+        │   ├── Parking.hpp
+        │   ├── Slot.cpp
+        │   ├── Slot.hpp
+        │   ├── User.cpp
+        │   └── User.hpp
+        └── network
+            ├── Server.cpp
+            └── Server.hpp
+
+17 directories, 60 files

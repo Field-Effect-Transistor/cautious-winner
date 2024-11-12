@@ -1,0 +1,38 @@
+@startuml database
+
+entity "Users" as users {
+    * user_id   : INTEGER <<PK>>
+    --
+    email    : TEXT
+    password    : TEXT
+    lPlate      : TEXT
+}
+
+entity "Auth" as auth {
+    * user_id   : INTEGER <<PK>>
+    --
+    lastAuth    : INTEGER
+    created_at  : INTEGER
+}
+
+entity "Parking" as parking {
+    * park_id   : INTEGER <<PK>>
+    --
+    type        : INTEGER
+    start_date  : INTEGER
+    end_date    : INTEGER
+    slot_id     : INTEGER <<FK>>
+    user_id     : INTEGER <<FK>>
+    lPlate      : TEXT
+}
+
+entity "Slots" as slots {
+    * park_id   : IINTEGER <<PK>>
+    --
+    slot_id     : INTEGER 
+}
+
+users }o--o{ parking : "user_id"
+users ||--|| auth   : "user_id"
+slots o--o{ parking : "slot_id"
+@enduml

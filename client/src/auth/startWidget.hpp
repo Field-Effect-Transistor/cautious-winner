@@ -17,6 +17,8 @@
 #include <QDebug>
 #include <QFile>
 
+#include <iostream>
+
 #include "authWidget.hpp"
 #include "loginWidget.hpp"
 #include "guestWidget.hpp"
@@ -24,11 +26,14 @@
 #include "../../../include/validation.hpp"
 #include "errorDialog.hpp"
 #include "../main/mainWindow.hpp"
+#include "../network/Client.hpp"
 
 class startWidget : public QWidget {
     Q_OBJECT
 
 protected:
+    Client& client;
+
     QString title;
 
     QBoxLayout* layout;
@@ -48,7 +53,7 @@ protected:
     regWidget* reg;
 
 public:
-    explicit startWidget(QWidget *parent = nullptr);
+    explicit startWidget(Client& client, QWidget *parent = nullptr);
     ~startWidget();
 
     void switchTo(int ID);

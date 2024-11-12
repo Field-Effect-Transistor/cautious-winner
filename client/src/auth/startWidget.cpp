@@ -1,6 +1,6 @@
 #include "startWidget.hpp"
 
-startWidget::startWidget(QWidget *parent) : QWidget(parent) {
+startWidget::startWidget(Client& client, QWidget *parent) : QWidget(parent), client(client) {
     layout = new QBoxLayout(QBoxLayout::TopToBottom, this);
     alignLayout = new QBoxLayout(QBoxLayout::TopToBottom);
     
@@ -119,22 +119,43 @@ void startWidget::loginSlot() {
         dialog.exec();
 
     } else {
-        hide();
-        mainWindow* mainW = new mainWindow();
-        mainW->show();
+        QString response = client.userLoginRequest(login->emailIn->text(), login->passwdIn->text());
+        QJsonObject jsonResponse = QJsonDocument::fromJson(response.toUtf8()).object();
+        if (jsonResponse["status"].toString() == "success") {
+            client.user_id = jsonResponse["user_id"].toInt();
+            client.lPlate = jsonResponse["lPlate"].toString();
+            hide();
+            mainWindow* mainW = new mainWindow(client);
+            mainW->show();
+        } else if (jsonResponse["status"].toString() == "error") {
+            errorDialog dialog(jsonResponse["message"].toString(), this);
+            dialog.exec();
+        } else {
+            errorDialog dialog("Something went wrong", this);
+            dialog.exec();
+        }
     }
 }
 
 void startWidget::guestSlot() {
-    if (false and validation::isEmailInvalid(guest->emailIn->text())) {
+    if (validation::isEmailInvalid(guest->emailIn->text())) {
         
         errorDialog dialog("Wrong email or password", this);
         dialog.exec();
 
     } else {
-        hide();
-        mainWindow* mainW = new mainWindow();
-        mainW->show();
+        QString response = client.guestLoginRequest();
+        QJsonObject jsonResponse = QJsonDocument::fromJson(response.toUtf8()).object();
+        if (jsonResponse["status"].toString() == "success") {
+            hide();
+            client.user_id = -1;
+            client.lPlate = guest->licenseIn->text();
+            mainWindow* mainW = new mainWindow(client);
+            mainW->show();
+        } else {
+            errorDialog dialog("Something went wrong", this);
+            dialog.exec();
+        }
     }
 }
 
@@ -153,7 +174,24 @@ void startWidget::regSlot() {
         errorDialog dialog("Wrong license", this);
         dialog.exec();
     } else {
-        switchToLogin();
+
+        QString response = client.registrationRequest(
+            reg->emailIn->text(),
+            reg->passwdIn->text(),
+            reg->licenseIn->text()
+        );
+
+        //std::cout << response.toStdString() << std::endl;
+
+        QJsonObject jsonResponse = QJsonDocument::fromJson(response.toUtf8()).object();
+        if (jsonResponse["status"].toString() == "success") {
+            switchToLogin();
+        } else if (jsonResponse["status"].toString() == "error") {
+            errorDialog dialog(jsonResponse["message"].toString(), this);
+            std::cout << jsonResponse["message"].toString().toStdString() << std::endl;
+            dialog.exec();
+        }
+
     }
 }
 
