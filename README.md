@@ -20,13 +20,27 @@ rm -rf build
 
 ### Step 2: Configure the build using CMake
 
-Use the following command to configure the project with CMake and Ninja:
+To configure the project with CMake and Ninja, use the following command:
 
 ```bash
 cmake -S . -B build -G Ninja
 ```
 
 This command specifies the source directory (`-S .`), the build directory (`-B build`), and the Ninja generator (`-G Ninja`).
+
+If you want to build only the server or only the client, you can enable or disable them using the `BUILD_CLIENT` and `BUILD_SERVER` options. For example:
+
+- **Build only the client**:
+
+  ```bash
+  cmake -S . -B build -G Ninja -DBUILD_CLIENT=ON -DBUILD_SERVER=OFF
+  ```
+
+- **Build only the server**:
+
+  ```bash
+  cmake -S . -B build -G Ninja -DBUILD_CLIENT=OFF -DBUILD_SERVER=ON
+  ```
 
 ### Step 3: Build the project using Ninja
 
@@ -45,13 +59,25 @@ Example:
 ninja -C build -v -d stats
 ```
 
+Here's an updated version of your README with the new information on running the client or server separately:
+
+---
+
 ### Step 4: Run the application
 
-Once the build is complete, run the executable:
+Once the build is complete, you can run the executable:
 
-```bash
-./build/parking_system_client
-```
+- **To run the client**:
+
+  ```bash
+  ./build/client/parking_system_client
+  ```
+
+- **To run the server**:
+
+  ```bash
+  ./build/server/parking_system_server
+  ```
 
 ## Build without Ninja
 
