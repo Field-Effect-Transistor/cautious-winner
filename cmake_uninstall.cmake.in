@@ -1,0 +1,13 @@
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+    message(FATAL_ERROR "CMAKE_INSTALL_PREFIX is not defined")
+endif()
+
+file(GLOB_RECURSE installed_files
+    RELATIVE "${CMAKE_INSTALL_PREFIX}"
+    "${CMAKE_INSTALL_PREFIX}/*"
+)
+
+foreach(file ${installed_files})
+    message(STATUS "Uninstalling: ${CMAKE_INSTALL_PREFIX}/${file}")
+    file(REMOVE "${CMAKE_INSTALL_PREFIX}/${file}")
+endforeach()

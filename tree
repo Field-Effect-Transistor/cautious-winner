@@ -38,7 +38,9 @@
 │   │   │   ├── parkWidget.cpp
 │   │   │   ├── parkWidget.hpp
 │   │   │   ├── pSlot.cpp
-│   │   │   └── pSlot.hpp
+│   │   │   ├── pSlot.hpp
+│   │   │   ├── slotStatusTable.cpp
+│   │   │   └── slotStatusTable.hpp
 │   │   ├── main.cpp
 │   │   └── network
 │   │       ├── Client.cpp
@@ -76,4 +78,4 @@
             ├── Server.cpp
             └── Server.hpp
 
-17 directories, 60 files
+17 directories, 62 files
